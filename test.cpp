@@ -1,7 +1,6 @@
 #include <iostream>
 
 int main(void) {
-    printf("Hello, World!\n");
-    
+    std::cout << "Hello, World!" << std::endl;
     return 0;
 }
