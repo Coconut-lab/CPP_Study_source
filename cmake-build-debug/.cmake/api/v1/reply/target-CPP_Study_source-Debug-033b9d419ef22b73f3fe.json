@@ -56,7 +56,11 @@
 				3,
 				4,
 				5,
-				6
+				6,
+				7,
+				8,
+				9,
+				10
 			]
 		}
 	],
@@ -80,7 +84,11 @@
 				3,
 				4,
 				5,
-				6
+				6,
+				7,
+				8,
+				9,
+				10
 			]
 		}
 	],
@@ -126,6 +134,30 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "\uc911\uac04/2/example-2-5.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "\uc911\uac04/2/example-2-6.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "\uc911\uac04/2/example-2-7.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "\uc911\uac04/2/book-chap-2-9.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "\uc911\uac04/3/example-3-1.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

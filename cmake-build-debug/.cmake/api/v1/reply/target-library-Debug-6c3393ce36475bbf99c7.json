@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "test"
+			"path" : "library"
 		}
 	],
 	"backtrace" : 1,
@@ -24,7 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 14,
+				"line" : 17,
 				"parent" : 0
 			}
 		]
@@ -53,7 +53,7 @@
 			]
 		}
 	],
-	"id" : "test::@6890427a1f51a3e7e1df",
+	"id" : "library::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -69,8 +69,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "test",
-	"nameOnDisk" : "test",
+	"name" : "library",
+	"nameOnDisk" : "library",
 	"paths" : 
 	{
 		"build" : ".",
