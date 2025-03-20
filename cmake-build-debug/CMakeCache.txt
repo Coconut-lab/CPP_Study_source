@@ -222,15 +222,6 @@ CPP_Study_source_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 CPP_Study_source_SOURCE_DIR:STATIC=/Users/chahyeonjin/Documents/CPP_Study_source
 
-//Value Computed by CMake
-C___Study_BINARY_DIR:STATIC=/Users/chahyeonjin/Documents/CPP_Study_source/cmake-build-debug
-
-//Value Computed by CMake
-C___Study_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-C___Study_SOURCE_DIR:STATIC=/Users/chahyeonjin/Documents/CPP_Study_source
-
 
 ########################
 # INTERNAL cache entries
