@@ -34,7 +34,11 @@ add_library(CPP_Study_source STATIC library.cpp
         중간/4/example-4-6.cpp
         중간/4/book_code-211.cpp
         중간/4/example-4-8.cpp
-        중간/4/example-4-8-1.cpp)
+        중간/4/example-4-8-1.cpp
+        중간/4/example-4-9.cpp
+        중간/4/example-4-10.cpp
+        중간/4/example-4-12.cpp
+        중간/4/book_code-213.cpp)
 add_executable(library test.cpp)
 add_executable(test test.cpp)
 add_executable(example-2-1 중간/2/example-2-1.cpp)
@@ -63,3 +67,7 @@ add_executable(example-4-6 중간/4/example-4-6.cpp)
 add_executable(book_code-211 중간/4/book_code-211.cpp)
 add_executable(example-4-8 중간/4/example-4-8.cpp)
 add_executable(example-4-8-1 중간/4/example-4-8-1.cpp)
+add_executable(example-4-9 중간/4/example-4-9.cpp)
+add_executable(example-4-10 중간/4/example-4-10.cpp)
+add_executable(example-4-12 중간/4/example-4-12.cpp)
+add_executable(book_code-213 중간/4/book_code-213.cpp)
