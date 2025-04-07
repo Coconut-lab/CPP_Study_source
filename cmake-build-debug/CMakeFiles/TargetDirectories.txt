@@ -33,5 +33,8 @@
 /Users/chahyeonjin/Documents/CPP_Study_source/cmake-build-debug/CMakeFiles/example-4-14.dir
 /Users/chahyeonjin/Documents/CPP_Study_source/cmake-build-debug/CMakeFiles/example-5-2.dir
 /Users/chahyeonjin/Documents/CPP_Study_source/cmake-build-debug/CMakeFiles/example-5-5.dir
+/Users/chahyeonjin/Documents/CPP_Study_source/cmake-build-debug/CMakeFiles/main.dir
+/Users/chahyeonjin/Documents/CPP_Study_source/cmake-build-debug/CMakeFiles/example-5-9.dir
+/Users/chahyeonjin/Documents/CPP_Study_source/cmake-build-debug/CMakeFiles/book-274-11.dir
 /Users/chahyeonjin/Documents/CPP_Study_source/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/chahyeonjin/Documents/CPP_Study_source/cmake-build-debug/CMakeFiles/rebuild_cache.dir
