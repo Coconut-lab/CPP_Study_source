@@ -361,6 +361,48 @@ build CMakeFiles/CPP_Study_source.dir/중간/7/example-7-1.cpp.o: CXX_COMPILER__
   OBJECT_DIR = CMakeFiles/CPP_Study_source.dir
   OBJECT_FILE_DIR = CMakeFiles/CPP_Study_source.dir/중간/7
 
+build CMakeFiles/CPP_Study_source.dir/중간/7/example-7-2.cpp.o: CXX_COMPILER__CPP_Study_source_unscanned_Debug /Users/chahyeonjin/Documents/CPP_Study_source/중간/7/example-7-2.cpp || cmake_object_order_depends_target_CPP_Study_source
+  DEP_FILE = CMakeFiles/CPP_Study_source.dir/중간/7/example-7-2.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/CPP_Study_source.dir
+  OBJECT_FILE_DIR = CMakeFiles/CPP_Study_source.dir/중간/7
+
+build CMakeFiles/CPP_Study_source.dir/중간/7/example-7-4.cpp.o: CXX_COMPILER__CPP_Study_source_unscanned_Debug /Users/chahyeonjin/Documents/CPP_Study_source/중간/7/example-7-4.cpp || cmake_object_order_depends_target_CPP_Study_source
+  DEP_FILE = CMakeFiles/CPP_Study_source.dir/중간/7/example-7-4.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/CPP_Study_source.dir
+  OBJECT_FILE_DIR = CMakeFiles/CPP_Study_source.dir/중간/7
+
+build CMakeFiles/CPP_Study_source.dir/중간/7/example-7-5.cpp.o: CXX_COMPILER__CPP_Study_source_unscanned_Debug /Users/chahyeonjin/Documents/CPP_Study_source/중간/7/example-7-5.cpp || cmake_object_order_depends_target_CPP_Study_source
+  DEP_FILE = CMakeFiles/CPP_Study_source.dir/중간/7/example-7-5.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/CPP_Study_source.dir
+  OBJECT_FILE_DIR = CMakeFiles/CPP_Study_source.dir/중간/7
+
+build CMakeFiles/CPP_Study_source.dir/중간/7/example-7-6.cpp.o: CXX_COMPILER__CPP_Study_source_unscanned_Debug /Users/chahyeonjin/Documents/CPP_Study_source/중간/7/example-7-6.cpp || cmake_object_order_depends_target_CPP_Study_source
+  DEP_FILE = CMakeFiles/CPP_Study_source.dir/중간/7/example-7-6.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/CPP_Study_source.dir
+  OBJECT_FILE_DIR = CMakeFiles/CPP_Study_source.dir/중간/7
+
+build CMakeFiles/CPP_Study_source.dir/중간/7/example-7-7.cpp.o: CXX_COMPILER__CPP_Study_source_unscanned_Debug /Users/chahyeonjin/Documents/CPP_Study_source/중간/7/example-7-7.cpp || cmake_object_order_depends_target_CPP_Study_source
+  DEP_FILE = CMakeFiles/CPP_Study_source.dir/중간/7/example-7-7.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/CPP_Study_source.dir
+  OBJECT_FILE_DIR = CMakeFiles/CPP_Study_source.dir/중간/7
+
+build CMakeFiles/CPP_Study_source.dir/중간/7/example-7-8.cpp.o: CXX_COMPILER__CPP_Study_source_unscanned_Debug /Users/chahyeonjin/Documents/CPP_Study_source/중간/7/example-7-8.cpp || cmake_object_order_depends_target_CPP_Study_source
+  DEP_FILE = CMakeFiles/CPP_Study_source.dir/중간/7/example-7-8.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/CPP_Study_source.dir
+  OBJECT_FILE_DIR = CMakeFiles/CPP_Study_source.dir/중간/7
+
+build CMakeFiles/CPP_Study_source.dir/중간/7/example-7-9.cpp.o: CXX_COMPILER__CPP_Study_source_unscanned_Debug /Users/chahyeonjin/Documents/CPP_Study_source/중간/7/example-7-9.cpp || cmake_object_order_depends_target_CPP_Study_source
+  DEP_FILE = CMakeFiles/CPP_Study_source.dir/중간/7/example-7-9.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/CPP_Study_source.dir
+  OBJECT_FILE_DIR = CMakeFiles/CPP_Study_source.dir/중간/7
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target CPP_Study_source
@@ -369,7 +411,7 @@ build CMakeFiles/CPP_Study_source.dir/중간/7/example-7-1.cpp.o: CXX_COMPILER__
 #############################################
 # Link the static library libCPP_Study_source.a
 
-build libCPP_Study_source.a: CXX_STATIC_LIBRARY_LINKER__CPP_Study_source_Debug CMakeFiles/CPP_Study_source.dir/library.cpp.o CMakeFiles/CPP_Study_source.dir/test.cpp.o CMakeFiles/CPP_Study_source.dir/중간/2/example-2-1.cpp.o CMakeFiles/CPP_Study_source.dir/중간/2/example-2-2.cpp.o CMakeFiles/CPP_Study_source.dir/중간/2/example-2-3.cpp.o CMakeFiles/CPP_Study_source.dir/중간/2/example-2-4.cpp.o CMakeFiles/CPP_Study_source.dir/중간/2/example-2-5.cpp.o CMakeFiles/CPP_Study_source.dir/중간/2/example-2-6.cpp.o CMakeFiles/CPP_Study_source.dir/중간/2/example-2-7.cpp.o CMakeFiles/CPP_Study_source.dir/중간/2/book-chap-2-9.cpp.o CMakeFiles/CPP_Study_source.dir/중간/3/example-3-1.cpp.o CMakeFiles/CPP_Study_source.dir/중간/3/example-3-3.cpp.o CMakeFiles/CPP_Study_source.dir/중간/3/example-3-4.cpp.o CMakeFiles/CPP_Study_source.dir/중간/3/example-3-5.cpp.o CMakeFiles/CPP_Study_source.dir/중간/3/example-3-6.cpp.o CMakeFiles/CPP_Study_source.dir/중간/3/example-3-7.cpp.o CMakeFiles/CPP_Study_source.dir/중간/3/example-3-8.cpp.o CMakeFiles/CPP_Study_source.dir/중간/3/example-3-2.cpp.o CMakeFiles/CPP_Study_source.dir/중간/3/example-3-10.cpp.o CMakeFiles/CPP_Study_source.dir/중간/3/example-3-11.cpp.o CMakeFiles/CPP_Study_source.dir/중간/3/Calculator.cpp.o CMakeFiles/CPP_Study_source.dir/중간/3/Adder.cpp.o CMakeFiles/CPP_Study_source.dir/중간/4/example-4-1.cpp.o CMakeFiles/CPP_Study_source.dir/중간/4/example-4-2.cpp.o CMakeFiles/CPP_Study_source.dir/중간/4/example-4-3.cpp.o CMakeFiles/CPP_Study_source.dir/중간/4/example-4-5.cpp.o CMakeFiles/CPP_Study_source.dir/중간/4/example-4-6.cpp.o CMakeFiles/CPP_Study_source.dir/중간/4/book_code-211.cpp.o CMakeFiles/CPP_Study_source.dir/중간/4/example-4-8.cpp.o CMakeFiles/CPP_Study_source.dir/중간/4/example-4-8-1.cpp.o CMakeFiles/CPP_Study_source.dir/중간/4/example-4-9.cpp.o CMakeFiles/CPP_Study_source.dir/중간/4/example-4-10.cpp.o CMakeFiles/CPP_Study_source.dir/중간/4/example-4-12.cpp.o CMakeFiles/CPP_Study_source.dir/중간/4/book_code-213.cpp.o CMakeFiles/CPP_Study_source.dir/중간/4/example-4-14.cpp.o CMakeFiles/CPP_Study_source.dir/중간/5/example-5-2.cpp.o CMakeFiles/CPP_Study_source.dir/중간/5/example-5-5.cpp.o CMakeFiles/CPP_Study_source.dir/중간/5/example-5-8.cpp.o CMakeFiles/CPP_Study_source.dir/중간/5/example-5-9.cpp.o CMakeFiles/CPP_Study_source.dir/중간/5/example-5-10.cpp.o CMakeFiles/CPP_Study_source.dir/중간/5/example-5-11.c.o CMakeFiles/CPP_Study_source.dir/중간/5/book-274-11.cpp.o CMakeFiles/CPP_Study_source.dir/중간/6/example-6-2.cpp.o CMakeFiles/CPP_Study_source.dir/중간/6/example-6-3.cpp.o CMakeFiles/CPP_Study_source.dir/중간/6/example-6-5.cpp.o CMakeFiles/CPP_Study_source.dir/중간/6/example-6-9.cpp.o CMakeFiles/CPP_Study_source.dir/중간/6/book-313-1.cpp.o CMakeFiles/CPP_Study_source.dir/중간/6/example-static.cpp.o CMakeFiles/CPP_Study_source.dir/중간/6/example-6-10.cpp.o CMakeFiles/CPP_Study_source.dir/중간/6/example-6-11.cpp.o CMakeFiles/CPP_Study_source.dir/중간/6/book-314-4.cpp.o CMakeFiles/CPP_Study_source.dir/중간/7/example-7-1.cpp.o
+build libCPP_Study_source.a: CXX_STATIC_LIBRARY_LINKER__CPP_Study_source_Debug CMakeFiles/CPP_Study_source.dir/library.cpp.o CMakeFiles/CPP_Study_source.dir/test.cpp.o CMakeFiles/CPP_Study_source.dir/중간/2/example-2-1.cpp.o CMakeFiles/CPP_Study_source.dir/중간/2/example-2-2.cpp.o CMakeFiles/CPP_Study_source.dir/중간/2/example-2-3.cpp.o CMakeFiles/CPP_Study_source.dir/중간/2/example-2-4.cpp.o CMakeFiles/CPP_Study_source.dir/중간/2/example-2-5.cpp.o CMakeFiles/CPP_Study_source.dir/중간/2/example-2-6.cpp.o CMakeFiles/CPP_Study_source.dir/중간/2/example-2-7.cpp.o CMakeFiles/CPP_Study_source.dir/중간/2/book-chap-2-9.cpp.o CMakeFiles/CPP_Study_source.dir/중간/3/example-3-1.cpp.o CMakeFiles/CPP_Study_source.dir/중간/3/example-3-3.cpp.o CMakeFiles/CPP_Study_source.dir/중간/3/example-3-4.cpp.o CMakeFiles/CPP_Study_source.dir/중간/3/example-3-5.cpp.o CMakeFiles/CPP_Study_source.dir/중간/3/example-3-6.cpp.o CMakeFiles/CPP_Study_source.dir/중간/3/example-3-7.cpp.o CMakeFiles/CPP_Study_source.dir/중간/3/example-3-8.cpp.o CMakeFiles/CPP_Study_source.dir/중간/3/example-3-2.cpp.o CMakeFiles/CPP_Study_source.dir/중간/3/example-3-10.cpp.o CMakeFiles/CPP_Study_source.dir/중간/3/example-3-11.cpp.o CMakeFiles/CPP_Study_source.dir/중간/3/Calculator.cpp.o CMakeFiles/CPP_Study_source.dir/중간/3/Adder.cpp.o CMakeFiles/CPP_Study_source.dir/중간/4/example-4-1.cpp.o CMakeFiles/CPP_Study_source.dir/중간/4/example-4-2.cpp.o CMakeFiles/CPP_Study_source.dir/중간/4/example-4-3.cpp.o CMakeFiles/CPP_Study_source.dir/중간/4/example-4-5.cpp.o CMakeFiles/CPP_Study_source.dir/중간/4/example-4-6.cpp.o CMakeFiles/CPP_Study_source.dir/중간/4/book_code-211.cpp.o CMakeFiles/CPP_Study_source.dir/중간/4/example-4-8.cpp.o CMakeFiles/CPP_Study_source.dir/중간/4/example-4-8-1.cpp.o CMakeFiles/CPP_Study_source.dir/중간/4/example-4-9.cpp.o CMakeFiles/CPP_Study_source.dir/중간/4/example-4-10.cpp.o CMakeFiles/CPP_Study_source.dir/중간/4/example-4-12.cpp.o CMakeFiles/CPP_Study_source.dir/중간/4/book_code-213.cpp.o CMakeFiles/CPP_Study_source.dir/중간/4/example-4-14.cpp.o CMakeFiles/CPP_Study_source.dir/중간/5/example-5-2.cpp.o CMakeFiles/CPP_Study_source.dir/중간/5/example-5-5.cpp.o CMakeFiles/CPP_Study_source.dir/중간/5/example-5-8.cpp.o CMakeFiles/CPP_Study_source.dir/중간/5/example-5-9.cpp.o CMakeFiles/CPP_Study_source.dir/중간/5/example-5-10.cpp.o CMakeFiles/CPP_Study_source.dir/중간/5/example-5-11.c.o CMakeFiles/CPP_Study_source.dir/중간/5/book-274-11.cpp.o CMakeFiles/CPP_Study_source.dir/중간/6/example-6-2.cpp.o CMakeFiles/CPP_Study_source.dir/중간/6/example-6-3.cpp.o CMakeFiles/CPP_Study_source.dir/중간/6/example-6-5.cpp.o CMakeFiles/CPP_Study_source.dir/중간/6/example-6-9.cpp.o CMakeFiles/CPP_Study_source.dir/중간/6/book-313-1.cpp.o CMakeFiles/CPP_Study_source.dir/중간/6/example-static.cpp.o CMakeFiles/CPP_Study_source.dir/중간/6/example-6-10.cpp.o CMakeFiles/CPP_Study_source.dir/중간/6/example-6-11.cpp.o CMakeFiles/CPP_Study_source.dir/중간/6/book-314-4.cpp.o CMakeFiles/CPP_Study_source.dir/중간/7/example-7-1.cpp.o CMakeFiles/CPP_Study_source.dir/중간/7/example-7-2.cpp.o CMakeFiles/CPP_Study_source.dir/중간/7/example-7-4.cpp.o CMakeFiles/CPP_Study_source.dir/중간/7/example-7-5.cpp.o CMakeFiles/CPP_Study_source.dir/중간/7/example-7-6.cpp.o CMakeFiles/CPP_Study_source.dir/중간/7/example-7-7.cpp.o CMakeFiles/CPP_Study_source.dir/중간/7/example-7-8.cpp.o CMakeFiles/CPP_Study_source.dir/중간/7/example-7-9.cpp.o
   ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles/CPP_Study_source.dir
@@ -1859,6 +1901,161 @@ build example-7-1: CXX_EXECUTABLE_LINKER__example-7-1_Debug CMakeFiles/example-7
   TARGET_FILE = example-7-1
   TARGET_PDB = example-7-1.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target example-7-2
+
+
+#############################################
+# Order-only phony target for example-7-2
+
+build cmake_object_order_depends_target_example-7-2: phony || .
+
+build CMakeFiles/example-7-2.dir/중간/7/example-7-2.cpp.o: CXX_COMPILER__example-7-2_unscanned_Debug /Users/chahyeonjin/Documents/CPP_Study_source/중간/7/example-7-2.cpp || cmake_object_order_depends_target_example-7-2
+  DEP_FILE = CMakeFiles/example-7-2.dir/중간/7/example-7-2.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/example-7-2.dir
+  OBJECT_FILE_DIR = CMakeFiles/example-7-2.dir/중간/7
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target example-7-2
+
+
+#############################################
+# Link the executable example-7-2
+
+build example-7-2: CXX_EXECUTABLE_LINKER__example-7-2_Debug CMakeFiles/example-7-2.dir/중간/7/example-7-2.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
+  OBJECT_DIR = CMakeFiles/example-7-2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = example-7-2
+  TARGET_PDB = example-7-2.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target example-7-4
+
+
+#############################################
+# Order-only phony target for example-7-4
+
+build cmake_object_order_depends_target_example-7-4: phony || .
+
+build CMakeFiles/example-7-4.dir/중간/7/example-7-4.cpp.o: CXX_COMPILER__example-7-4_unscanned_Debug /Users/chahyeonjin/Documents/CPP_Study_source/중간/7/example-7-4.cpp || cmake_object_order_depends_target_example-7-4
+  DEP_FILE = CMakeFiles/example-7-4.dir/중간/7/example-7-4.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/example-7-4.dir
+  OBJECT_FILE_DIR = CMakeFiles/example-7-4.dir/중간/7
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target example-7-4
+
+
+#############################################
+# Link the executable example-7-4
+
+build example-7-4: CXX_EXECUTABLE_LINKER__example-7-4_Debug CMakeFiles/example-7-4.dir/중간/7/example-7-4.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
+  OBJECT_DIR = CMakeFiles/example-7-4.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = example-7-4
+  TARGET_PDB = example-7-4.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target example-7-5
+
+
+#############################################
+# Order-only phony target for example-7-5
+
+build cmake_object_order_depends_target_example-7-5: phony || .
+
+build CMakeFiles/example-7-5.dir/중간/7/example-7-5.cpp.o: CXX_COMPILER__example-7-5_unscanned_Debug /Users/chahyeonjin/Documents/CPP_Study_source/중간/7/example-7-5.cpp || cmake_object_order_depends_target_example-7-5
+  DEP_FILE = CMakeFiles/example-7-5.dir/중간/7/example-7-5.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/example-7-5.dir
+  OBJECT_FILE_DIR = CMakeFiles/example-7-5.dir/중간/7
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target example-7-5
+
+
+#############################################
+# Link the executable example-7-5
+
+build example-7-5: CXX_EXECUTABLE_LINKER__example-7-5_Debug CMakeFiles/example-7-5.dir/중간/7/example-7-5.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
+  OBJECT_DIR = CMakeFiles/example-7-5.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = example-7-5
+  TARGET_PDB = example-7-5.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target example-7-6
+
+
+#############################################
+# Order-only phony target for example-7-6
+
+build cmake_object_order_depends_target_example-7-6: phony || .
+
+build CMakeFiles/example-7-6.dir/중간/7/example-7-6.cpp.o: CXX_COMPILER__example-7-6_unscanned_Debug /Users/chahyeonjin/Documents/CPP_Study_source/중간/7/example-7-6.cpp || cmake_object_order_depends_target_example-7-6
+  DEP_FILE = CMakeFiles/example-7-6.dir/중간/7/example-7-6.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/example-7-6.dir
+  OBJECT_FILE_DIR = CMakeFiles/example-7-6.dir/중간/7
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target example-7-6
+
+
+#############################################
+# Link the executable example-7-6
+
+build example-7-6: CXX_EXECUTABLE_LINKER__example-7-6_Debug CMakeFiles/example-7-6.dir/중간/7/example-7-6.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
+  OBJECT_DIR = CMakeFiles/example-7-6.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = example-7-6
+  TARGET_PDB = example-7-6.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target example-7-7
+
+
+#############################################
+# Order-only phony target for example-7-7
+
+build cmake_object_order_depends_target_example-7-7: phony || .
+
+build CMakeFiles/example-7-7.dir/중간/7/example-7-7.cpp.o: CXX_COMPILER__example-7-7_unscanned_Debug /Users/chahyeonjin/Documents/CPP_Study_source/중간/7/example-7-7.cpp || cmake_object_order_depends_target_example-7-7
+  DEP_FILE = CMakeFiles/example-7-7.dir/중간/7/example-7-7.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/example-7-7.dir
+  OBJECT_FILE_DIR = CMakeFiles/example-7-7.dir/중간/7
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target example-7-7
+
+
+#############################################
+# Link the executable example-7-7
+
+build example-7-7: CXX_EXECUTABLE_LINKER__example-7-7_Debug CMakeFiles/example-7-7.dir/중간/7/example-7-7.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
+  OBJECT_DIR = CMakeFiles/example-7-7.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = example-7-7
+  TARGET_PDB = example-7-7.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -1895,7 +2092,7 @@ build CPP_Study_source: phony libCPP_Study_source.a
 #############################################
 # Folder: /Users/chahyeonjin/Documents/CPP_Study_source/cmake-build-debug
 
-build all: phony libCPP_Study_source.a library test example-2-1 example-2-2 example-2-3 example-2-4 example-2-5 example-2-6 example-2-7 book-chap-2-9 example-3-3 example-3-4 example-3-6 example-3-7 example-3-8 example-3-2 example-3-10 example-3-11 Adder Calculator example-4-1 example-4-2 example-4-5 example-4-6 book_code-211 example-4-8 example-4-8-1 example-4-9 example-4-10 example-4-12 book_code-213 example-4-14 example-5-2 example-5-5 main example-5-9 book-274-11 example-6-2 example-6-5 example-6-9 book-313-1 example-6-3 example-static example-6-10 example-6-11 book-314-4 example-7-1
+build all: phony libCPP_Study_source.a library test example-2-1 example-2-2 example-2-3 example-2-4 example-2-5 example-2-6 example-2-7 book-chap-2-9 example-3-3 example-3-4 example-3-6 example-3-7 example-3-8 example-3-2 example-3-10 example-3-11 Adder Calculator example-4-1 example-4-2 example-4-5 example-4-6 book_code-211 example-4-8 example-4-8-1 example-4-9 example-4-10 example-4-12 book_code-213 example-4-14 example-5-2 example-5-5 main example-5-9 book-274-11 example-6-2 example-6-5 example-6-9 book-313-1 example-6-3 example-static example-6-10 example-6-11 book-314-4 example-7-1 example-7-2 example-7-4 example-7-5 example-7-6 example-7-7
 
 # =============================================================================
 # Built-in targets
