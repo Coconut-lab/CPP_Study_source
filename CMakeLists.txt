@@ -43,8 +43,6 @@ add_library(CPP_Study_source STATIC library.cpp
         중간/5/example-5-2.cpp
         중간/5/example-5-5.cpp
         중간/5/example-5-8.cpp
-        과제/4/ATMachine.h
-        과제/4/Account.h
         중간/5/example-5-9.cpp
         중간/5/example-5-10.cpp
         중간/5/example-5-11.c
@@ -68,9 +66,14 @@ add_library(CPP_Study_source STATIC library.cpp
         중간/7/example-7-9.cpp
         중간/7/example-7-11.cpp
         중간/7/example-7-13.cpp
-        중간/7/example-7-14.cpp)
-add_executable(library test.cpp)
-add_executable(test test.cpp)
+        중간/7/example-7-14.cpp
+        기말/8/example-8-3.cpp
+        기말/8/example-8-7.cpp
+        기말/9/example-9-1.cpp
+        기말/9/example-9-2.cpp
+        기말/9/example-9-3.cpp
+        과제/6/main.cpp)
+
 add_executable(example-2-1 중간/2/example-2-1.cpp)
 add_executable(example-2-2 중간/2/example-2-2.cpp)
 add_executable(example-2-3 중간/2/example-2-3.cpp)
@@ -104,7 +107,6 @@ add_executable(book_code-213 중간/4/book_code-213.cpp)
 add_executable(example-4-14 중간/4/example-4-14.cpp)
 add_executable(example-5-2 중간/5/example-5-2.cpp)
 add_executable(example-5-5 중간/5/example-5-5.cpp)
-add_executable(main 과제/4/main.cpp 과제/4/Account.cpp 과제/4/ATMachine.cpp)
 add_executable(example-5-9 중간/5/example-5-9.cpp)
 add_executable(book-274-11 중간/5/book-274-11.cpp)
 add_executable(example-6-2 중간/6/example-6-2.cpp)
@@ -125,3 +127,10 @@ add_executable(example-7-7 중간/7/example-7-7.cpp)
 add_executable(example-7-11 중간/7/example-7-11.cpp)
 add_executable(example-7-13 중간/7/example-7-13.cpp)
 add_executable(example-7-14 중간/7/example-7-14.cpp)
+add_executable(test test.cpp)
+add_executable(example-8-3 기말/8/example-8-3.cpp)
+add_executable(example-8-7 기말/8/example-8-7.cpp)
+add_executable(example-9-1 기말/9/example-9-1.cpp)
+add_executable(example-9-2 기말/9/example-9-2.cpp)
+add_executable(example-9-3 기말/9/example-9-3.cpp)
+add_executable(main 과제/6/main.cpp 과제/6/Account.cpp 과제/6/Account.h 과제/6/ATMachine.cpp 과제/6/ATMachine.h 과제/6/CustomerSvc.cpp 과제/6/CustomerSvc.h 과제/6/Statistics.cpp 과제/6/Statistics.h)
