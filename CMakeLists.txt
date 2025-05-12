@@ -72,7 +72,20 @@ add_library(CPP_Study_source STATIC library.cpp
         기말/9/example-9-1.cpp
         기말/9/example-9-2.cpp
         기말/9/example-9-3.cpp
-        과제/6/main.cpp)
+        과제/6/main.cpp
+        기말/9/example-9-4.cpp
+        기말/9/example-9-5.cpp
+        기말/9/example-dynamic-binding.cpp
+        기말/9/Shape.cpp
+        기말/9/Shape.h
+        기말/9/Circle.cpp
+        기말/9/Circle.h
+        기말/9/Rect.cpp
+        기말/9/Rect.h
+        기말/9/Line.cpp
+        기말/9/Line.h
+        기말/9/example-9-6.cpp
+        기말/9/example-9-7.cpp)
 
 add_executable(example-2-1 중간/2/example-2-1.cpp)
 add_executable(example-2-2 중간/2/example-2-2.cpp)
@@ -134,3 +147,8 @@ add_executable(example-9-1 기말/9/example-9-1.cpp)
 add_executable(example-9-2 기말/9/example-9-2.cpp)
 add_executable(example-9-3 기말/9/example-9-3.cpp)
 add_executable(main 과제/6/main.cpp 과제/6/Account.cpp 과제/6/Account.h 과제/6/ATMachine.cpp 과제/6/ATMachine.h 과제/6/CustomerSvc.cpp 과제/6/CustomerSvc.h 과제/6/Statistics.cpp 과제/6/Statistics.h)
+add_executable(example-9-4 기말/9/example-9-4.cpp)
+add_executable(example-9-5 기말/9/example-9-5.cpp)
+add_executable(example-dynamic-binding 기말/9/example-dynamic-binding.cpp 기말/9/Shape.cpp 기말/9/Shape.h 기말/9/Circle.cpp 기말/9/Circle.h 기말/9/Rect.cpp 기말/9/Rect.h 기말/9/Line.cpp 기말/9/Line.h)
+add_executable(example-9-6 기말/9/example-9-6.cpp)
+add_executable(example-9-7 기말/9/example-9-7.cpp)
