@@ -85,7 +85,22 @@ add_library(CPP_Study_source STATIC library.cpp
         기말/9/Line.cpp
         기말/9/Line.h
         기말/9/example-9-6.cpp
-        기말/9/example-9-7.cpp)
+        기말/9/example-9-7.cpp
+        기말/10/example-10-1.cpp
+        기말/10/example-10-3.cpp
+        기말/10/example-10-5.cpp
+        기말/10/book-525-1.cpp
+        기말/10/example-10-6.cpp
+        기말/10/example-10-7.cpp
+        기말/10/example-10-8.cpp
+        기말/10/example-10-9.cpp
+        기말/10/example-10-10.cpp
+        기말/10/example-10-11.cpp
+        기말/10/example-10-12.cpp
+        기말/10/example-10-13.cpp
+        수시/upcasting_downcasting.cpp
+        수시/overriding.cpp
+        수시/abstract_class.cpp)
 
 add_executable(example-2-1 중간/2/example-2-1.cpp)
 add_executable(example-2-2 중간/2/example-2-2.cpp)
@@ -152,3 +167,16 @@ add_executable(example-9-5 기말/9/example-9-5.cpp)
 add_executable(example-dynamic-binding 기말/9/example-dynamic-binding.cpp 기말/9/Shape.cpp 기말/9/Shape.h 기말/9/Circle.cpp 기말/9/Circle.h 기말/9/Rect.cpp 기말/9/Rect.h 기말/9/Line.cpp 기말/9/Line.h)
 add_executable(example-9-6 기말/9/example-9-6.cpp)
 add_executable(example-9-7 기말/9/example-9-7.cpp)
+add_executable(example-10-1 기말/10/example-10-1.cpp)
+add_executable(example-10-3 기말/10/example-10-3.cpp)
+add_executable(example-10-5 기말/10/example-10-5.cpp)
+add_executable(book-525-1 기말/10/book-525-1.cpp)
+add_executable(example-10-6 기말/10/example-10-6.cpp)
+add_executable(example-10-7 기말/10/example-10-7.cpp)
+add_executable(example-10-8 기말/10/example-10-8.cpp)
+add_executable(example-10-9 기말/10/example-10-9.cpp)
+add_executable(example-10-10 기말/10/example-10-10.cpp)
+add_executable(example-10-11 기말/10/example-10-11.cpp)
+add_executable(example-10-12 기말/10/example-10-12.cpp)
+add_executable(example-10-13 기말/10/example-10-13.cpp)
+add_executable(upcasting_downcasting 수시/upcasting_downcasting.cpp)
