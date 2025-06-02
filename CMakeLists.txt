@@ -1,6 +1,21 @@
 cmake_minimum_required(VERSION 3.30)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# UTF-8 인코딩 설정 (한글 문제 해결)
+if(WIN32)
+    # Windows에서 MSVC 컴파일러 사용시
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /utf-8")
+    add_definitions(/utf-8)
+elseif(APPLE)
+    # macOS에서 Clang 컴파일러 사용시
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -finput-charset=UTF-8 -fexec-charset=UTF-8")
+    add_definitions(-DUTF8)
+else()
+    # Linux에서 GCC 컴파일러 사용시
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -finput-charset=UTF-8 -fexec-charset=UTF-8")
+endif()
+
 project(CPP_Study_source)
 
 add_library(CPP_Study_source STATIC library.cpp
@@ -100,7 +115,8 @@ add_library(CPP_Study_source STATIC library.cpp
         기말/10/example-10-13.cpp
         수시/upcasting_downcasting.cpp
         수시/overriding.cpp
-        수시/abstract_class.cpp)
+        수시/abstract_class.cpp
+        과제/9/main.cpp)
 
 add_executable(example-2-1 중간/2/example-2-1.cpp)
 add_executable(example-2-2 중간/2/example-2-2.cpp)
@@ -180,3 +196,25 @@ add_executable(example-10-11 기말/10/example-10-11.cpp)
 add_executable(example-10-12 기말/10/example-10-12.cpp)
 add_executable(example-10-13 기말/10/example-10-13.cpp)
 add_executable(upcasting_downcasting 수시/upcasting_downcasting.cpp)
+add_executable(example-10-14 기말/10/example-10-14.cpp)
+add_executable(example-10-18 기말/10/example-10-18.cpp)
+add_executable(example-10-19 기말/10/example-10-19.cpp)
+add_executable(example-10-20 기말/10/example-10-20.cpp)
+add_executable(example-11-2 기말/11/example-11-2.cpp)
+add_executable(example-11-3 기말/11/example-11-3.cpp)
+add_executable(main-9 과제/9/main.cpp
+        과제/9/TicketBox.cpp
+        과제/9/TicketBox.h
+        과제/9/Screen.cpp
+        과제/9/Screen.h
+        과제/9/Ticket.h
+        과제/9/Statistics.cpp
+        과제/9/Statistics.h
+        과제/9/Pay.h
+        과제/9/Pay.cpp
+)
+add_executable(book-example-583-8 기말/11/book-example-583-8.cpp)
+add_executable(book-example-585-10 기말/11/book-example-585-10.cpp)
+add_executable(example-13-4 기말/13/example-13-4.cpp)
+add_executable(example-13-5 기말/13/example-13-5.cpp)
+add_executable(example-13-6 기말/13/example-13-6.cpp)

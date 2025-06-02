@@ -1,0 +1,861 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.30"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41,
+						42,
+						43,
+						44,
+						45,
+						46,
+						47,
+						48,
+						49,
+						50,
+						51,
+						52,
+						53,
+						54,
+						55,
+						56,
+						57,
+						58,
+						59,
+						60,
+						61,
+						62,
+						63,
+						64,
+						65,
+						66,
+						67,
+						68,
+						69,
+						70,
+						71,
+						72,
+						73,
+						74,
+						75,
+						76,
+						77,
+						78,
+						79,
+						80,
+						81,
+						82,
+						83,
+						84,
+						85,
+						86,
+						87,
+						88,
+						89
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CPP_Study_source",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41,
+						42,
+						43,
+						44,
+						45,
+						46,
+						47,
+						48,
+						49,
+						50,
+						51,
+						52,
+						53,
+						54,
+						55,
+						56,
+						57,
+						58,
+						59,
+						60,
+						61,
+						62,
+						63,
+						64,
+						65,
+						66,
+						67,
+						68,
+						69,
+						70,
+						71,
+						72,
+						73,
+						74,
+						75,
+						76,
+						77,
+						78,
+						79,
+						80,
+						81,
+						82,
+						83,
+						84,
+						85,
+						86,
+						87,
+						88,
+						89
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Adder::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Adder-Debug-a3412e734f4088330535.json",
+					"name" : "Adder",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CPP_Study_source::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CPP_Study_source-Debug-439a06723d60491dd892.json",
+					"name" : "CPP_Study_source",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Calculator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Calculator-Debug-e9f5c0e3c0a9172f8b37.json",
+					"name" : "Calculator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "book-274-11::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-book-274-11-Debug-88929240b9fbf47c93c9.json",
+					"name" : "book-274-11",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "book-313-1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-book-313-1-Debug-bb2e5ea4c49fd4a870b7.json",
+					"name" : "book-313-1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "book-314-4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-book-314-4-Debug-3613f8155677fb00b6df.json",
+					"name" : "book-314-4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "book-525-1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-book-525-1-Debug-c5e0c9c82a5dd33af1e7.json",
+					"name" : "book-525-1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "book-chap-2-9::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-book-chap-2-9-Debug-65fcc191a39f0954bec3.json",
+					"name" : "book-chap-2-9",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "book-example-583-8::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-book-example-583-8-Debug-86d90cfb32a874406dfd.json",
+					"name" : "book-example-583-8",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "book-example-585-10::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-book-example-585-10-Debug-497a0183a9eea7e2b89a.json",
+					"name" : "book-example-585-10",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "book_code-211::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-book_code-211-Debug-243d936f1a3719d174c5.json",
+					"name" : "book_code-211",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "book_code-213::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-book_code-213-Debug-c0771c0e33901c0a178d.json",
+					"name" : "book_code-213",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-10-1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-10-1-Debug-794acd09a09b115577ae.json",
+					"name" : "example-10-1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-10-10::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-10-10-Debug-efbadf073c835404fce8.json",
+					"name" : "example-10-10",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-10-11::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-10-11-Debug-a19e17e0335d92defbfa.json",
+					"name" : "example-10-11",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-10-12::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-10-12-Debug-56283adaa5ad370bdb56.json",
+					"name" : "example-10-12",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-10-13::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-10-13-Debug-9be8ec382395537a96d8.json",
+					"name" : "example-10-13",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-10-14::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-10-14-Debug-2ba93e37d91f2fcf0d95.json",
+					"name" : "example-10-14",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-10-18::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-10-18-Debug-12c8efe14f15e73c0cf0.json",
+					"name" : "example-10-18",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-10-19::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-10-19-Debug-133d332ffa7058c46b30.json",
+					"name" : "example-10-19",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-10-20::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-10-20-Debug-d1b4e9be37025dc22c68.json",
+					"name" : "example-10-20",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-10-3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-10-3-Debug-618fe86fac04abb25741.json",
+					"name" : "example-10-3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-10-5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-10-5-Debug-e21cc0a25d2d374dd280.json",
+					"name" : "example-10-5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-10-6::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-10-6-Debug-024148a639565306aaaf.json",
+					"name" : "example-10-6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-10-7::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-10-7-Debug-8cefe2077610fa2aca30.json",
+					"name" : "example-10-7",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-10-8::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-10-8-Debug-971508dff872b5105ce7.json",
+					"name" : "example-10-8",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-10-9::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-10-9-Debug-59de3d6dba7872dc9612.json",
+					"name" : "example-10-9",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-11-2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-11-2-Debug-4d73f21acea95078035e.json",
+					"name" : "example-11-2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-11-3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-11-3-Debug-ad35fde20221555e96ab.json",
+					"name" : "example-11-3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-13-4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-13-4-Debug-2bb44617d0a9ca960d4c.json",
+					"name" : "example-13-4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-13-5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-13-5-Debug-98a898573814bf6624e2.json",
+					"name" : "example-13-5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-13-6::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-13-6-Debug-3c391214c97460291c96.json",
+					"name" : "example-13-6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-2-1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-2-1-Debug-e72f8216a5529c861f16.json",
+					"name" : "example-2-1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-2-2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-2-2-Debug-a3ced013e394f91f2c47.json",
+					"name" : "example-2-2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-2-3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-2-3-Debug-542109a05fac328beb73.json",
+					"name" : "example-2-3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-2-4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-2-4-Debug-cc622a4bf7aa72d31baf.json",
+					"name" : "example-2-4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-2-5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-2-5-Debug-d7f88ce69b101c10f733.json",
+					"name" : "example-2-5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-2-6::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-2-6-Debug-e1d63dc6d790595d40fc.json",
+					"name" : "example-2-6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-2-7::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-2-7-Debug-4ce63ea7b34dd222f1e6.json",
+					"name" : "example-2-7",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-3-10::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-3-10-Debug-2b9a4bbe2f4b07c5b8db.json",
+					"name" : "example-3-10",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-3-11::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-3-11-Debug-a1eaaebd0a15eaca860c.json",
+					"name" : "example-3-11",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-3-2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-3-2-Debug-4c9a97543091339c1e26.json",
+					"name" : "example-3-2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-3-3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-3-3-Debug-f442153f845eb20a787a.json",
+					"name" : "example-3-3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-3-4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-3-4-Debug-25d38ace349d176d3e46.json",
+					"name" : "example-3-4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-3-6::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-3-6-Debug-81ee9c6c50e4418019ed.json",
+					"name" : "example-3-6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-3-7::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-3-7-Debug-46ef1a1b1cafaf9e8f23.json",
+					"name" : "example-3-7",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-3-8::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-3-8-Debug-31f1f15d165f8cf70dde.json",
+					"name" : "example-3-8",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-4-1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-4-1-Debug-75343a540f5f318c0ddd.json",
+					"name" : "example-4-1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-4-10::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-4-10-Debug-28b33cc7fd1b3a5da6ba.json",
+					"name" : "example-4-10",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-4-12::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-4-12-Debug-623e40c6a4d90fd82b1b.json",
+					"name" : "example-4-12",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-4-14::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-4-14-Debug-e5f5238ccd7f9d8d58b2.json",
+					"name" : "example-4-14",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-4-2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-4-2-Debug-5f626a18d61520b58f1c.json",
+					"name" : "example-4-2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-4-5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-4-5-Debug-efd28ea47d0359ce0477.json",
+					"name" : "example-4-5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-4-6::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-4-6-Debug-3b3baa9c3a63f3b753a6.json",
+					"name" : "example-4-6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-4-8::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-4-8-Debug-2adb20a0fc618aa01087.json",
+					"name" : "example-4-8",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-4-8-1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-4-8-1-Debug-58df48540bf923ecdaf9.json",
+					"name" : "example-4-8-1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-4-9::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-4-9-Debug-5e472bd2496cda262aeb.json",
+					"name" : "example-4-9",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-5-2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-5-2-Debug-08d75ad026b9022d2b1c.json",
+					"name" : "example-5-2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-5-5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-5-5-Debug-d0e4978633a707b06c87.json",
+					"name" : "example-5-5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-5-9::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-5-9-Debug-368cf0825ccdcc9bf63d.json",
+					"name" : "example-5-9",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-6-10::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-6-10-Debug-53d22d6134a5f38e53f7.json",
+					"name" : "example-6-10",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-6-11::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-6-11-Debug-c827d6ef8f7539a7eeea.json",
+					"name" : "example-6-11",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-6-2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-6-2-Debug-6dcabec807afba4b070d.json",
+					"name" : "example-6-2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-6-3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-6-3-Debug-26a04bac82f0f0f449a7.json",
+					"name" : "example-6-3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-6-5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-6-5-Debug-9cefb290aee123dc4ee5.json",
+					"name" : "example-6-5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-6-9::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-6-9-Debug-6b1a73f08f1616d06d77.json",
+					"name" : "example-6-9",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-7-1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-7-1-Debug-6225d5dbe6922391d330.json",
+					"name" : "example-7-1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-7-11::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-7-11-Debug-593df2e01ae4bc2a4030.json",
+					"name" : "example-7-11",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-7-13::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-7-13-Debug-2a0366202dc63e3bee91.json",
+					"name" : "example-7-13",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-7-14::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-7-14-Debug-b978a7a5183294ea07a6.json",
+					"name" : "example-7-14",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-7-2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-7-2-Debug-6f42acba5d9f969fa28c.json",
+					"name" : "example-7-2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-7-4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-7-4-Debug-7a45eb1cb0b78b04569b.json",
+					"name" : "example-7-4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-7-5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-7-5-Debug-0cd730139cd6fc4fdd9a.json",
+					"name" : "example-7-5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-7-6::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-7-6-Debug-1bc174a65a3ac8ae65a2.json",
+					"name" : "example-7-6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-7-7::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-7-7-Debug-73a6a696a47eef4cdd4a.json",
+					"name" : "example-7-7",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-8-3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-8-3-Debug-000f7925fca0df4704e1.json",
+					"name" : "example-8-3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-8-7::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-8-7-Debug-3e774cf636c59de085e7.json",
+					"name" : "example-8-7",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-9-1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-9-1-Debug-7e50d1f0c3f5333f2843.json",
+					"name" : "example-9-1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-9-2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-9-2-Debug-118f1fa85ac4678e5d83.json",
+					"name" : "example-9-2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-9-3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-9-3-Debug-915cc1c0bcea0b46b824.json",
+					"name" : "example-9-3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-9-4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-9-4-Debug-1fea50ba88229751ac35.json",
+					"name" : "example-9-4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-9-5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-9-5-Debug-0eeb35b3caed7cbc0ecb.json",
+					"name" : "example-9-5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-9-6::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-9-6-Debug-66368b1d5c083a6ace79.json",
+					"name" : "example-9-6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-9-7::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-9-7-Debug-ba88d1aabc1fc3fa5a05.json",
+					"name" : "example-9-7",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-dynamic-binding::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-dynamic-binding-Debug-6f0fa24c85c1ad25a15e.json",
+					"name" : "example-dynamic-binding",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example-static::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-static-Debug-db7e22bf96a0fe2c20cb.json",
+					"name" : "example-static",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-main-Debug-0cfbe108884e29e636bc.json",
+					"name" : "main",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "main-9::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-main-9-Debug-8737defa53612f2e689a.json",
+					"name" : "main-9",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test-Debug-bdc17d44205c1840c5a7.json",
+					"name" : "test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "upcasting_downcasting::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-upcasting_downcasting-Debug-df4b3a579a7879d16e46.json",
+					"name" : "upcasting_downcasting",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/chahyeonjin/Documents/CPP_Study_source/cmake-build-debug",
+		"source" : "/Users/chahyeonjin/Documents/CPP_Study_source"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
