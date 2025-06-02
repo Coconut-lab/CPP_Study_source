@@ -5,34 +5,34 @@
 #define BANK_TRANSFER_PAYMENT 2
 #define CREDIT_CARD_PAYMENT 3
 
-#define MOBILE_PHONE_INTEREST_RATE 0.2   // ëª¨ë°”ì¼ ê²°ì œ ìˆ˜ìˆ˜ë£Œ ë¹„ìœ¨(ì´ììœ¨)
-#define BANK_TRANSFER_INTEREST_RATE 0.1  // ì€í–‰ ì´ì²´ ê²°ì œ ìˆ˜ìˆ˜ë£Œ ë¹„ìœ¨(ì´ììœ¨)
-#define CREDIT_CARD_INTEREST_RATE 0.15   // ì‹ ìš©ì¹´ë“œ ê²°ì œ ìˆ˜ìˆ˜ë£Œ ë¹„ìœ¨(ì´ììœ¨)
+#define MOBILE_PHONE_INTEREST_RATE 0.2   // ¸ğ¹ÙÀÏ °áÁ¦ ¼ö¼ö·á ºñÀ²(ÀÌÀÚÀ²)
+#define BANK_TRANSFER_INTEREST_RATE 0.1  // ÀºÇà ÀÌÃ¼ °áÁ¦ ¼ö¼ö·á ºñÀ²(ÀÌÀÚÀ²)
+#define CREDIT_CARD_INTEREST_RATE 0.15   // ½Å¿ëÄ«µå °áÁ¦ ¼ö¼ö·á ºñÀ²(ÀÌÀÚÀ²)
 
 class Pay {
 public:
-    virtual int charge(int amount) = 0;  // ê²°ì œí•˜ê¸°
+    virtual int charge(int amount) = 0;  // °áÁ¦ÇÏ±â
 };
 
 class CardPay : public Pay {
     double interest;
 public:
     CardPay(double rate) { this->interest = rate; }
-    int charge(int amount);  // ê²°ì œê¸ˆì•¡ = í‹°ì¼“ ê°€ê²© + í‹°ì¼“ ê°€ê²© * ì¹´ë“œìˆ˜ìˆ˜ë£Œ ë¹„ìœ¨
+    int charge(int amount);  // °áÁ¦±İ¾× = Æ¼ÄÏ °¡°İ + Æ¼ÄÏ °¡°İ * Ä«µå¼ö¼ö·á ºñÀ²
 };
 
 class BankTransfer : public Pay {
     double interest;
 public:
     BankTransfer(double rate) { this->interest = rate; }
-    int charge(int amount);  // ê²°ì œê¸ˆì•¡ = í‹°ì¼“ ê°€ê²© + í‹°ì¼“ ê°€ê²© * ì€í–‰ìˆ˜ìˆ˜ë£Œ ë¹„ìœ¨
+    int charge(int amount);  // °áÁ¦±İ¾× = Æ¼ÄÏ °¡°İ + Æ¼ÄÏ °¡°İ * ÀºÇà¼ö¼ö·á ºñÀ²
 };
 
 class MobilePay : public Pay {
     double interest;
 public:
     MobilePay(double rate) { this->interest = rate; }
-    int charge(int amount);  // ê²°ì œê¸ˆì•¡ = í‹°ì¼“ ê°€ê²© + í‹°ì¼“ ê°€ê²© * ëª¨ë°”ì¼ìˆ˜ìˆ˜ë£Œ ë¹„ìœ¨
+    int charge(int amount);  // °áÁ¦±İ¾× = Æ¼ÄÏ °¡°İ + Æ¼ÄÏ °¡°İ * ¸ğ¹ÙÀÏ¼ö¼ö·á ºñÀ²
 };
 
 #endif

@@ -13,7 +13,7 @@ Screen::Screen(string name, int price, int row, int col) {
     nTicketPrice = price;
     nCurrentReservedId = 0;
     
-    // ìƒì˜ì‹œê°„í‘œ ì´ˆê¸°í™”
+    // »ó¿µ½Ã°£Ç¥ ÃÊ±âÈ­
     showtimes[0] = "09:00";
     showtimes[1] = "12:00";
     showtimes[2] = "15:00";
@@ -41,15 +41,15 @@ Screen::~Screen() {
 
 void Screen::showMovieMenu() {
     cout << "-------------------------" << endl;
-    cout << "ë©”ë‰´ : " << strMovieName << endl;
+    cout << "¸Ş´º : " << strMovieName << endl;
     cout << "-------------------------" << endl;
-    cout << "1. ì˜í™” ì •ë³´" << endl;
-    cout << "2. ì¢Œì„ í˜„í™©" << endl;
-    cout << "3. ì¢Œì„ ì˜ˆì•½" << endl;
-    cout << "4. ì˜ˆë§¤ ê²°ì œ" << endl;
-    cout << "5. ìƒì˜ì‹œê°„í‘œ ë³´ê¸°" << endl;
-    cout << "6. ì˜ˆì•½ ì¡°íšŒ" << endl;
-    cout << "7. ë©”ì¸ ë©”ë‰´ ì´ë™" << endl;
+    cout << "1. ¿µÈ­ Á¤º¸" << endl;
+    cout << "2. ÁÂ¼® ÇöÈ²" << endl;
+    cout << "3. ÁÂ¼® ¿¹¾à" << endl;
+    cout << "4. ¿¹¸Å °áÁ¦" << endl;
+    cout << "5. »ó¿µ½Ã°£Ç¥ º¸±â" << endl;
+    cout << "6. ¿¹¾à Á¶È¸" << endl;
+    cout << "7. ¸ŞÀÎ ¸Ş´º ÀÌµ¿" << endl;
     cout << endl;
 }
 
@@ -57,26 +57,26 @@ void Screen::showSeatMap() {
     int showtimeChoice;
     
     cout << "-------------------------" << endl;
-    cout << "ì¢Œì„ ì˜ˆì•½ í˜„í™© ì¡°íšŒ" << endl;
+    cout << "ÁÂ¼® ¿¹¾à ÇöÈ² Á¶È¸" << endl;
     cout << "-------------------------" << endl;
-    cout << "ìƒì˜ì‹œê°„ì„ ì„ íƒí•˜ì„¸ìš”:" << endl;
+    cout << "»ó¿µ½Ã°£À» ¼±ÅÃÇÏ¼¼¿ä:" << endl;
     for (int i = 0; i < 5; i++) {
         cout << (i+1) << ". " << showtimes[i] << endl;
     }
-    cout << "ìƒì˜ì‹œê°„ ì„ íƒ (1-5): ";
+    cout << "»ó¿µ½Ã°£ ¼±ÅÃ (1-5): ";
     cin >> showtimeChoice;
     
     if (showtimeChoice < 1 || showtimeChoice > 5) {
-        cout << "ì˜ëª»ëœ ìƒì˜ì‹œê°„ ì„ íƒì…ë‹ˆë‹¤." << endl;
+        cout << "Àß¸øµÈ »ó¿µ½Ã°£ ¼±ÅÃÀÔ´Ï´Ù." << endl;
         return;
     }
-    showtimeChoice--; // ë°°ì—´ ì¸ë±ìŠ¤ë¡œ ë³€í™˜
+    showtimeChoice--; // ¹è¿­ ÀÎµ¦½º·Î º¯È¯
     
     cout << "-------------------------" << endl;
-    cout << "ì¢Œì„ ì˜ˆì•½ í˜„í™© (" << showtimes[showtimeChoice] << ")" << endl;
+    cout << "ÁÂ¼® ¿¹¾à ÇöÈ² (" << showtimes[showtimeChoice] << ")" << endl;
     cout << "-------------------------" << endl;
     
-    // ì¢Œì„ ìƒíƒœ í‘œì‹œ (ì„ íƒëœ ìƒì˜ì‹œê°„ì— í•´ë‹¹í•˜ëŠ” ê²ƒë§Œ)
+    // ÁÂ¼® »óÅÂ Ç¥½Ã (¼±ÅÃµÈ »ó¿µ½Ã°£¿¡ ÇØ´çÇÏ´Â °Í¸¸)
     cout << "   ";
     for (int j = 0; j < nColMax; j++) {
         cout << "[" << j+1 << "] ";
@@ -86,7 +86,7 @@ void Screen::showSeatMap() {
     for (int i = 0; i < nRowMax; i++) {
         cout << "[" << i+1 << "] ";
         for (int j = 0; j < nColMax; j++) {
-            // ì„ íƒëœ ìƒì˜ì‹œê°„ì— í•´ë‹¹í•˜ëŠ” ì˜ˆì•½ë§Œ í‘œì‹œ
+            // ¼±ÅÃµÈ »ó¿µ½Ã°£¿¡ ÇØ´çÇÏ´Â ¿¹¾à¸¸ Ç¥½Ã
             if (pSeatArray[i][j].getShowtime() == showtimeChoice && 
                 (pSeatArray[i][j].getCheck() == SEAT_RESERVED_MARK || 
                  pSeatArray[i][j].getCheck() == SEAT_COMPLETION_MARK)) {
@@ -98,15 +98,15 @@ void Screen::showSeatMap() {
         cout << endl;
     }
     cout << "-------------------------" << endl;
-    cout << "ë²”ë¡€: [" << SEAT_EMPTY_MARK << "] ë¹ˆì¢Œì„  [" 
-         << SEAT_RESERVED_MARK << "] ì˜ˆì•½ì™„ë£Œ  [" 
-         << SEAT_COMPLETION_MARK << "] ê²°ì œì™„ë£Œ" << endl;
+    cout << "¹ü·Ê: [" << SEAT_EMPTY_MARK << "] ºóÁÂ¼®  [" 
+         << SEAT_RESERVED_MARK << "] ¿¹¾à¿Ï·á  [" 
+         << SEAT_COMPLETION_MARK << "] °áÁ¦¿Ï·á" << endl;
     cout << "-------------------------" << endl;
 }
 
 void Screen::showMovieSchedule() {
     cout << "-------------------------" << endl;
-    cout << "ìƒì˜ì‹œê°„í‘œ : " << strMovieName << endl;
+    cout << "»ó¿µ½Ã°£Ç¥ : " << strMovieName << endl;
     cout << "-------------------------" << endl;
     for (int i = 0; i < 5; i++) {
         cout << (i+1) << ". " << showtimes[i] << endl;
@@ -118,63 +118,63 @@ string Screen::getShowtimeString(int index) {
     if (index >= 0 && index < 5) {
         return showtimes[index];
     }
-    return "ë¯¸ì •";
+    return "¹ÌÁ¤";
 }
 
 void Screen::reserveTicket() {
     int row, col, showtimeChoice;
     
     cout << "-------------------------" << endl;
-    cout << "[ ì¢Œì„ ì˜ˆì•½ ]" << endl;
+    cout << "[ ÁÂ¼® ¿¹¾à ]" << endl;
     cout << "-------------------------" << endl;
     
-    // ìƒì˜ì‹œê°„ ì„ íƒ
-    cout << "ìƒì˜ì‹œê°„ì„ ì„ íƒí•˜ì„¸ìš”:" << endl;
+    // »ó¿µ½Ã°£ ¼±ÅÃ
+    cout << "»ó¿µ½Ã°£À» ¼±ÅÃÇÏ¼¼¿ä:" << endl;
     for (int i = 0; i < 5; i++) {
         cout << (i+1) << ". " << showtimes[i] << endl;
     }
-    cout << "ìƒì˜ì‹œê°„ ì„ íƒ (1-5): ";
+    cout << "»ó¿µ½Ã°£ ¼±ÅÃ (1-5): ";
     cin >> showtimeChoice;
     
     if (showtimeChoice < 1 || showtimeChoice > 5) {
-        cout << "ì˜ëª»ëœ ìƒì˜ì‹œê°„ ì„ íƒì…ë‹ˆë‹¤." << endl;
+        cout << "Àß¸øµÈ »ó¿µ½Ã°£ ¼±ÅÃÀÔ´Ï´Ù." << endl;
         return;
     }
-    showtimeChoice--; // ë°°ì—´ ì¸ë±ìŠ¤ë¡œ ë³€í™˜
+    showtimeChoice--; // ¹è¿­ ÀÎµ¦½º·Î º¯È¯
     
-    cout << "ì„ íƒëœ ìƒì˜ì‹œê°„: " << showtimes[showtimeChoice] << endl;
+    cout << "¼±ÅÃµÈ »ó¿µ½Ã°£: " << showtimes[showtimeChoice] << endl;
     cout << "-------------------------" << endl;
     
-    cout << "ì¢Œì„ í–‰ ë²ˆí˜¸ ì…ë ¥ [1-" << nRowMax << "]: ";
+    cout << "ÁÂ¼® Çà ¹øÈ£ ÀÔ·Â [1-" << nRowMax << "]: ";
     cin >> row;
-    cout << "ì¢Œì„ ì—´ ë²ˆí˜¸ ì…ë ¥ [1-" << nColMax << "]: ";
+    cout << "ÁÂ¼® ¿­ ¹øÈ£ ÀÔ·Â [1-" << nColMax << "]: ";
     cin >> col;
     
-    // ì¢Œì„ ë²ˆí˜¸ ìœ íš¨ì„± ê²€ì‚¬
+    // ÁÂ¼® ¹øÈ£ À¯È¿¼º °Ë»ç
     if (row < 1 || row > nRowMax || col < 1 || col > nColMax) {
-        cout << "í–‰ [" << row << "]  ì—´ [" << col << "] ë²ˆí˜¸ê°€ ì˜ëª» ì…ë ¥ë˜ì—ˆìŠµë‹ˆë‹¤." << endl;
+        cout << "Çà [" << row << "]  ¿­ [" << col << "] ¹øÈ£°¡ Àß¸ø ÀÔ·ÂµÇ¾ú½À´Ï´Ù." << endl;
         return;
     }
     
-    // ë°°ì—´ ì¸ë±ìŠ¤ëŠ” 0ë¶€í„° ì‹œì‘í•˜ë¯€ë¡œ -1
+    // ¹è¿­ ÀÎµ¦½º´Â 0ºÎÅÍ ½ÃÀÛÇÏ¹Ç·Î -1
     row--; col--;
     
-    // ì´ë¯¸ ì˜ˆì•½ëœ ì¢Œì„ì¸ì§€ í™•ì¸
+    // ÀÌ¹Ì ¿¹¾àµÈ ÁÂ¼®ÀÎÁö È®ÀÎ
     if (pSeatArray[row][col].getCheck() != SEAT_EMPTY_MARK) {
-        cout << "í–‰ [" << row+1 << "]  ì—´ [" << col+1 << "] ì´ë¯¸ ì˜ˆì•½ëœ ì¢Œì„ì…ë‹ˆë‹¤." << endl;
+        cout << "Çà [" << row+1 << "]  ¿­ [" << col+1 << "] ÀÌ¹Ì ¿¹¾àµÈ ÁÂ¼®ÀÔ´Ï´Ù." << endl;
         return;
     }
     
-    // ì˜ˆì•½ ì²˜ë¦¬
+    // ¿¹¾à Ã³¸®
     nCurrentReservedId++;
     pSeatArray[row][col].setSeat(row+1, col+1);
     pSeatArray[row][col].setReservedID(nCurrentReservedId);
     pSeatArray[row][col].setShowtime(showtimeChoice);
     pSeatArray[row][col].setCheck(SEAT_RESERVED_MARK);
     
-    cout << "ìƒì˜ì‹œê°„: " << showtimes[showtimeChoice] << endl;
-    cout << "í–‰ [" << row+1 << "]  ì—´ [" << col+1 << "] " << nCurrentReservedId << " ì˜ˆì•½ ë²ˆí˜¸ë¡œ ì ‘ìˆ˜ë˜ì—ˆìŠµë‹ˆë‹¤." << endl;
-    cout << "ì˜ˆì•½ì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤." << endl;
+    cout << "»ó¿µ½Ã°£: " << showtimes[showtimeChoice] << endl;
+    cout << "Çà [" << row+1 << "]  ¿­ [" << col+1 << "] " << nCurrentReservedId << " ¿¹¾à ¹øÈ£·Î Á¢¼öµÇ¾ú½À´Ï´Ù." << endl;
+    cout << "¿¹¾àÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù." << endl;
     cout << "-------------------------" << endl;
 }
 
@@ -182,12 +182,12 @@ void Screen::Payment() {
     int reservedId, payMethod;
     
     cout << "-------------------------" << endl;
-    cout << "[ ì¢Œì„ ì˜ˆì•½ ê²°ì œ ]" << endl;
+    cout << "[ ÁÂ¼® ¿¹¾à °áÁ¦ ]" << endl;
     cout << "-------------------------" << endl;
-    cout << "ì˜ˆì•½ ë²ˆí˜¸ ì…ë ¥ : ";
+    cout << "¿¹¾à ¹øÈ£ ÀÔ·Â : ";
     cin >> reservedId;
     
-    // ì˜ˆì•½ ë²ˆí˜¸ë¡œ ì¢Œì„ ì°¾ê¸°
+    // ¿¹¾à ¹øÈ£·Î ÁÂ¼® Ã£±â
     bool found = false;
     int targetRow = -1, targetCol = -1;
     
@@ -203,18 +203,18 @@ void Screen::Payment() {
     }
     
     if (!found) {
-        cout << "ì˜ˆì•½ ë²ˆí˜¸ " << reservedId << "ë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤." << endl;
+        cout << "¿¹¾à ¹øÈ£ " << reservedId << "¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù." << endl;
         return;
     }
     
     cout << "-------------------------" << endl;
-    cout << "ê²°ì œ ë°©ì‹ ì„ íƒ" << endl;
+    cout << "°áÁ¦ ¹æ½Ä ¼±ÅÃ" << endl;
     cout << "-------------------------" << endl;
-    cout << "1. ëª¨ë°”ì¼ ê²°ì œ" << endl;
-    cout << "2. ë¬´í†µì¥ ì…ê¸ˆ" << endl;
-    cout << "3. ì¹´ë“œ ê²°ì œ" << endl;
+    cout << "1. ¸ğ¹ÙÀÏ °áÁ¦" << endl;
+    cout << "2. ¹«ÅëÀå ÀÔ±İ" << endl;
+    cout << "3. Ä«µå °áÁ¦" << endl;
     cout << endl;
-    cout << "ê²°ì œ ë°©ì‹(1~3) : ";
+    cout << "°áÁ¦ ¹æ½Ä(1~3) : ";
     cin >> payMethod;
     
     Pay* payProcessor = NULL;
@@ -224,58 +224,58 @@ void Screen::Payment() {
     switch (payMethod) {
         case MOBILE_PHONE_PAYMENT:
             cout << "-------------------------" << endl;
-            cout << "ëª¨ë°”ì¼ ê²°ì œ ì •ë³´ ì…ë ¥" << endl;
+            cout << "¸ğ¹ÙÀÏ °áÁ¦ Á¤º¸ ÀÔ·Â" << endl;
             cout << "-------------------------" << endl;
-            cout << "ì´ë¦„ ì…ë ¥ : ";
+            cout << "ÀÌ¸§ ÀÔ·Â : ";
             cin >> userName;
-            cout << "í•¸ë“œí° ë²ˆí˜¸ ì…ë ¥ : ";
+            cout << "ÇÚµåÆù ¹øÈ£ ÀÔ·Â : ";
             cin >> phoneNumber;
             payProcessor = new MobilePay(MOBILE_PHONE_INTEREST_RATE);
-            payMethodName = "ëª¨ë°”ì¼";
+            payMethodName = "¸ğ¹ÙÀÏ";
             break;
         case BANK_TRANSFER_PAYMENT:
             cout << "-------------------------" << endl;
-            cout << "ë¬´í†µì¥ ì…ê¸ˆ ì •ë³´ ì…ë ¥" << endl;
+            cout << "¹«ÅëÀå ÀÔ±İ Á¤º¸ ÀÔ·Â" << endl;
             cout << "-------------------------" << endl;
-            cout << "ê³„ì¢Œë²ˆí˜¸ 12ìë¦¬ ì…ë ¥ : ";
+            cout << "°èÁÂ¹øÈ£ 12ÀÚ¸® ÀÔ·Â : ";
             cin >> accountNumber;
-            cout << "ì´ë¦„ ì…ë ¥ : ";
+            cout << "ÀÌ¸§ ÀÔ·Â : ";
             cin >> userName;
             payProcessor = new BankTransfer(BANK_TRANSFER_INTEREST_RATE);
-            payMethodName = "ë¬´í†µì¥";
+            payMethodName = "¹«ÅëÀå";
             break;
         case CREDIT_CARD_PAYMENT:
             cout << "-------------------------" << endl;
-            cout << "ì¹´ë“œ ê²°ì œ ì •ë³´ ì…ë ¥" << endl;
+            cout << "Ä«µå °áÁ¦ Á¤º¸ ÀÔ·Â" << endl;
             cout << "-------------------------" << endl;
-            cout << "ì¹´ë“œë²ˆí˜¸ 12ìë¦¬ ì…ë ¥ : ";
+            cout << "Ä«µå¹øÈ£ 12ÀÚ¸® ÀÔ·Â : ";
             cin >> cardNumber;
-            cout << "ì´ë¦„ ì…ë ¥ : ";
+            cout << "ÀÌ¸§ ÀÔ·Â : ";
             cin >> userName;
             payProcessor = new CardPay(CREDIT_CARD_INTEREST_RATE);
-            payMethodName = "ì¹´ë“œ";
+            payMethodName = "Ä«µå";
             break;
         default:
-            cout << "ì˜ëª»ëœ ê²°ì œ ë°©ì‹ì…ë‹ˆë‹¤." << endl;
+            cout << "Àß¸øµÈ °áÁ¦ ¹æ½ÄÀÔ´Ï´Ù." << endl;
             return;
     }
     
     int totalAmount = payProcessor->charge(nTicketPrice);
     
     cout << "-------------------------" << endl;
-    cout << "ì´ë¦„ : " << userName << endl;
+    cout << "ÀÌ¸§ : " << userName << endl;
     
     if (payMethod == MOBILE_PHONE_PAYMENT) {
-        cout << "í•¸ë“œí° ë²ˆí˜¸ : " << phoneNumber << endl;
+        cout << "ÇÚµåÆù ¹øÈ£ : " << phoneNumber << endl;
     } else if (payMethod == BANK_TRANSFER_PAYMENT) {
-        cout << "ê³„ì¢Œë²ˆí˜¸ : " << accountNumber << endl;
+        cout << "°èÁÂ¹øÈ£ : " << accountNumber << endl;
     } else if (payMethod == CREDIT_CARD_PAYMENT) {
-        cout << "ì¹´ë“œë²ˆí˜¸ : " << cardNumber << endl;
+        cout << "Ä«µå¹øÈ£ : " << cardNumber << endl;
     }
 
-    cout << "TUKOREA " << payMethodName << " ê²°ì œê°€ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤. : " << totalAmount << endl;
+    cout << "TUKOREA " << payMethodName << " °áÁ¦°¡ ¿Ï·áµÇ¾ú½À´Ï´Ù. : " << totalAmount << endl;
     
-    // í‹°ì¼“ ì •ë³´ ì—…ë°ì´íŠ¸ (ì˜ˆì•½ì ì´ë¦„ë„ ì €ì¥)
+    // Æ¼ÄÏ Á¤º¸ ¾÷µ¥ÀÌÆ® (¿¹¾àÀÚ ÀÌ¸§µµ ÀúÀå)
     pSeatArray[targetRow][targetCol].setPayAmount(totalAmount);
     pSeatArray[targetRow][targetCol].setPayMethod(payMethod);
     pSeatArray[targetRow][targetCol].setCustomerName(userName);
@@ -289,12 +289,12 @@ void Screen::checkReservation() {
     int reservedId;
     
     cout << "-------------------------" << endl;
-    cout << "[ ì˜ˆì•½ ì¡°íšŒ ]" << endl;
+    cout << "[ ¿¹¾à Á¶È¸ ]" << endl;
     cout << "-------------------------" << endl;
-    cout << "ì˜ˆì•½ ë²ˆí˜¸ ì…ë ¥ : ";
+    cout << "¿¹¾à ¹øÈ£ ÀÔ·Â : ";
     cin >> reservedId;
     
-    // ì˜ˆì•½ ë²ˆí˜¸ë¡œ ì¢Œì„ ì°¾ê¸°
+    // ¿¹¾à ¹øÈ£·Î ÁÂ¼® Ã£±â
     bool found = false;
     
     for (int i = 0; i < nRowMax && !found; i++) {
@@ -304,19 +304,19 @@ void Screen::checkReservation() {
                  pSeatArray[i][j].getCheck() == SEAT_COMPLETION_MARK)) {
                 
                 cout << "-------------------------" << endl;
-                cout << "ì˜ˆì•½ ì •ë³´" << endl;
+                cout << "¿¹¾à Á¤º¸" << endl;
                 cout << "-------------------------" << endl;
-                cout << "ì˜ˆì•½ ë²ˆí˜¸ : " << reservedId << endl;
-                cout << "ì˜í™” ì œëª© : " << strMovieName << endl;
-                cout << "ìƒì˜ ì‹œê°„ : " << getShowtimeString(pSeatArray[i][j].getShowtime()) << endl;
-                cout << "ì¢Œì„ : " << (i+1) << "í–‰ " << (j+1) << "ì—´" << endl;
+                cout << "¿¹¾à ¹øÈ£ : " << reservedId << endl;
+                cout << "¿µÈ­ Á¦¸ñ : " << strMovieName << endl;
+                cout << "»ó¿µ ½Ã°£ : " << getShowtimeString(pSeatArray[i][j].getShowtime()) << endl;
+                cout << "ÁÂ¼® : " << (i+1) << "Çà " << (j+1) << "¿­" << endl;
                 
                 if (pSeatArray[i][j].getCheck() == SEAT_COMPLETION_MARK) {
-                    cout << "ì˜ˆì•½ì : " << pSeatArray[i][j].getCustomerName() << endl;
-                    cout << "ê²°ì œ ê¸ˆì•¡ : " << pSeatArray[i][j].getPayAmount() << "ì›" << endl;
-                    cout << "ìƒíƒœ : ê²°ì œì™„ë£Œ" << endl;
+                    cout << "¿¹¾àÀÚ : " << pSeatArray[i][j].getCustomerName() << endl;
+                    cout << "°áÁ¦ ±İ¾× : " << pSeatArray[i][j].getPayAmount() << "¿ø" << endl;
+                    cout << "»óÅÂ : °áÁ¦¿Ï·á" << endl;
                 } else {
-                    cout << "ìƒíƒœ : ì˜ˆì•½ì™„ë£Œ (ê²°ì œëŒ€ê¸°)" << endl;
+                    cout << "»óÅÂ : ¿¹¾à¿Ï·á (°áÁ¦´ë±â)" << endl;
                 }
                 cout << "-------------------------" << endl;
                 found = true;
@@ -325,7 +325,7 @@ void Screen::checkReservation() {
     }
     
     if (!found) {
-        cout << "ì˜ˆì•½ ë²ˆí˜¸ " << reservedId << "ë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤." << endl;
+        cout << "¿¹¾à ¹øÈ£ " << reservedId << "¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù." << endl;
         cout << "-------------------------" << endl;
     }
 }
@@ -334,16 +334,16 @@ void Screen::checkReservationByName() {
     string customerName;
     
     cout << "-------------------------" << endl;
-    cout << "[ ì´ë¦„ìœ¼ë¡œ ì˜ˆì•½ ì¡°íšŒ ]" << endl;
+    cout << "[ ÀÌ¸§À¸·Î ¿¹¾à Á¶È¸ ]" << endl;
     cout << "-------------------------" << endl;
-    cout << "ì˜ˆì•½ì ì´ë¦„ ì…ë ¥ : ";
+    cout << "¿¹¾àÀÚ ÀÌ¸§ ÀÔ·Â : ";
     cin >> customerName;
     
     bool found = false;
     int count = 0;
     
     cout << "-------------------------" << endl;
-    cout << customerName << "ë‹˜ì˜ ì˜ˆì•½ ë‚´ì—­" << endl;
+    cout << customerName << "´ÔÀÇ ¿¹¾à ³»¿ª" << endl;
     cout << "-------------------------" << endl;
     
     for (int i = 0; i < nRowMax; i++) {
@@ -352,53 +352,53 @@ void Screen::checkReservationByName() {
                 pSeatArray[i][j].getCheck() == SEAT_COMPLETION_MARK) {
                 
                 count++;
-                cout << count << ". ì˜ˆì•½ë²ˆí˜¸: " << pSeatArray[i][j].getReservedID() 
-                     << " | ìƒì˜ì‹œê°„: " << getShowtimeString(pSeatArray[i][j].getShowtime())
-                     << " | ì¢Œì„: " << (i+1) << "í–‰ " << (j+1) << "ì—´"
-                     << " | ê¸ˆì•¡: " << pSeatArray[i][j].getPayAmount() << "ì›" << endl;
+                cout << count << ". ¿¹¾à¹øÈ£: " << pSeatArray[i][j].getReservedID() 
+                     << " | »ó¿µ½Ã°£: " << getShowtimeString(pSeatArray[i][j].getShowtime())
+                     << " | ÁÂ¼®: " << (i+1) << "Çà " << (j+1) << "¿­"
+                     << " | ±İ¾×: " << pSeatArray[i][j].getPayAmount() << "¿ø" << endl;
                 found = true;
             }
         }
     }
     
     if (!found) {
-        cout << customerName << "ë‹˜ì˜ ì˜ˆì•½ ë‚´ì—­ì´ ì—†ìŠµë‹ˆë‹¤." << endl;
+        cout << customerName << "´ÔÀÇ ¿¹¾à ³»¿ªÀÌ ¾ø½À´Ï´Ù." << endl;
     }
     cout << "-------------------------" << endl;
 }
 
-// CGVScreen êµ¬í˜„ - ì˜í™” ì •ë³´ë¥¼ ì‹¤ì œ ì˜í™” ë‚´ìš©ìœ¼ë¡œ ìˆ˜ì •
+// CGVScreen ±¸Çö - ¿µÈ­ Á¤º¸¸¦ ½ÇÁ¦ ¿µÈ­ ³»¿ëÀ¸·Î ¼öÁ¤
 void CGVScreen::showMovieInfo() {
     cout << "-------------------------" << endl;
     cout << "     [ "<< strMovieName << " ]     " << endl;
     cout << "-------------------------" << endl;
-    cout << "ì˜í™”ê´€ : CJ CGV ì†”ë¡œ 1ê´€" << endl;
-    cout << "ì¶œì—°ì§„ : ìœ í•´ì§„, ì´ì œí›ˆ, ì†í˜„ì£¼, ìµœì˜ì¤€" << endl;
-    cout << "ì¤„ê±°ë¦¬ : ëŒ€í•œë¯¼êµ­ êµ­ë¯¼ ì†Œì£¼ê°€ ë¬´ë„ˆì¡Œë‹¤! 1997ë…„ IMF ì™¸í™˜ìœ„ê¸°, ë…ë³´ì ì¸ ë§›ìœ¼ë¡œ..." << endl;
-    cout << "ê´€ëŒë£Œ : " << nTicketPrice << "ì›" << endl;
+    cout << "¿µÈ­°ü : CJ CGV ¼Ö·Î 1°ü" << endl;
+    cout << "Ãâ¿¬Áø : À¯ÇØÁø, ÀÌÁ¦ÈÆ, ¼ÕÇöÁÖ, ÃÖ¿µÁØ" << endl;
+    cout << "ÁÙ°Å¸® : ´ëÇÑ¹Î±¹ ±¹¹Î ¼ÒÁÖ°¡ ¹«³ÊÁ³´Ù! 1997³â IMF ¿ÜÈ¯À§±â, µ¶º¸ÀûÀÎ ¸ÀÀ¸·Î..." << endl;
+    cout << "°ü¶÷·á : " << nTicketPrice << "¿ø" << endl;
     cout << "-------------------------" << endl;
 }
 
-// LotteCinemaScreen êµ¬í˜„  
+// LotteCinemaScreen ±¸Çö  
 void LotteCinemaScreen::showMovieInfo() {
     cout << "-------------------------" << endl;
     cout << "     [ "<< strMovieName << " ]     " << endl;
     cout << "-------------------------" << endl;
-    cout << "ì˜í™”ê´€ : ë¡¯ë°ì‹œë„¤ë§ˆ ì˜í™” 2ê´€" << endl;
-    cout << "ì¶œì—°ì§„ : í¬ë¦¬ìŠ¤ ìƒŒë”ìŠ¤, ë§ˆì´ì•„ ì¼ˆì•Œë¡œí•˜, ì‹œë“œë‹ˆ ì•„êµ¬ë™" << endl;
-    cout << "ì¤„ê±°ë¦¬ : ë³´ì†¡ë³´ì†¡í•œ íŒŒë€ ì†œí„¸, í˜¸ê¸°ì‹¬ ê°€ë“í•œ í° ëˆˆ, ì¥ë‚œê¸° ê°€ë“í•œ ì›ƒìŒì„ ê°€ì¡Œì§€ë§Œ..! ..." << endl;
-    cout << "ê´€ëŒë£Œ : " << nTicketPrice << "ì›" << endl;
+    cout << "¿µÈ­°ü : ·Ôµ¥½Ã³×¸¶ ¿µÈ­ 2°ü" << endl;
+    cout << "Ãâ¿¬Áø : Å©¸®½º »÷´õ½º, ¸¶ÀÌ¾Æ ÄÌ¾Ë·ÎÇÏ, ½Ãµå´Ï ¾Æ±¸µ¿" << endl;
+    cout << "ÁÙ°Å¸® : º¸¼Ûº¸¼ÛÇÑ ÆÄ¶õ ¼ØÅĞ, È£±â½É °¡µæÇÑ Å« ´«, Àå³­±â °¡µæÇÑ ¿ôÀ½À» °¡Á³Áö¸¸..! ..." << endl;
+    cout << "°ü¶÷·á : " << nTicketPrice << "¿ø" << endl;
     cout << "-------------------------" << endl;
 }
 
-// MegaboxScreen êµ¬í˜„
+// MegaboxScreen ±¸Çö
 void MegaboxScreen::showMovieInfo() {
     cout << "-------------------------" << endl;
     cout << "     [ "<< strMovieName << " ]     " << endl;
     cout << "-------------------------" << endl;
-    cout << "ì˜í™”ê´€ : ë©”ê°€ë°•ìŠ¤ ì˜í™” 3ê´€" << endl;
-    cout << "ì¶œì—°ì§„ : í†° í¬ë£¨ì¦ˆ, í—¤ì¼ë¦¬ ì•³ì›°, ë¹™ ë¼ë©”ìŠ¤, ì‚¬ì´ë¨¼ í˜ê·¸ ..." << endl;
-    cout << "ì¤„ê±°ë¦¬ : ë””ì§€í„¸ìƒì˜ ëª¨ë“  ì •ë³´ë¥¼ í†µì œí•  ìˆ˜ ìˆëŠ” ì‚¬ìƒ ì´ˆìœ ì˜ ë¬´ê¸°ë¡œ ì¸í•´ ì „ ì„¸ê³„ êµ­ê°€ì™€ ì¡°ì§ì˜..." << endl;
-    cout << "ê´€ëŒë£Œ : " << nTicketPrice << "ì›" << endl;
+    cout << "¿µÈ­°ü : ¸Ş°¡¹Ú½º ¿µÈ­ 3°ü" << endl;
+    cout << "Ãâ¿¬Áø : Åè Å©·çÁî, ÇìÀÏ¸® ¾ÜÀ£, ºù ¶ó¸Ş½º, »çÀÌ¸Õ Æä±× ..." << endl;
+    cout << "ÁÙ°Å¸® : µğÁöÅĞ»óÀÇ ¸ğµç Á¤º¸¸¦ ÅëÁ¦ÇÒ ¼ö ÀÖ´Â »ç»ó ÃÊÀ¯ÀÇ ¹«±â·Î ÀÎÇØ Àü ¼¼°è ±¹°¡¿Í Á¶Á÷ÀÇ..." << endl;
+    cout << "°ü¶÷·á : " << nTicketPrice << "¿ø" << endl;
     cout << "-------------------------" << endl;
 }

@@ -8,29 +8,29 @@ using namespace std;
 
 class Screen {
 protected:
-    int nTicketPrice;           // í‹°ì¼“ ê°€ê²©
-    int nRowMax, nColMax;       // ì¢Œì„ í–‰ê³¼ ì—´ ìµœëŒ€ ê°’
-    int nCurrentReservedId;     // ë°œê¸‰ëœ ë§ˆì§€ë§‰ ì˜ˆì•½ ë²ˆí˜¸
-    Ticket ** pSeatArray;       // ìŠ¤í¬ë¦° ì¢Œì„ì— ëŒ€í•œ í‹°ì¼“ ë°°ì—´
-    string strMovieName;        // ìŠ¤í¬ë¦° ìƒì˜ì¤‘ì¸ ì˜í™” ì œëª©
-    string showtimes[5];        // ìƒì˜ì‹œê°„í‘œ (5ê°œ ì‹œê°„ëŒ€)
+    int nTicketPrice;           // Æ¼ÄÏ °¡°İ
+    int nRowMax, nColMax;       // ÁÂ¼® Çà°ú ¿­ ÃÖ´ë °ª
+    int nCurrentReservedId;     // ¹ß±ŞµÈ ¸¶Áö¸· ¿¹¾à ¹øÈ£
+    Ticket ** pSeatArray;       // ½ºÅ©¸° ÁÂ¼®¿¡ ´ëÇÑ Æ¼ÄÏ ¹è¿­
+    string strMovieName;        // ½ºÅ©¸° »ó¿µÁßÀÎ ¿µÈ­ Á¦¸ñ
+    string showtimes[5];        // »ó¿µ½Ã°£Ç¥ (5°³ ½Ã°£´ë)
 
 public:
     Screen(string name, int price, int row, int col);
     ~Screen();
-    void showSeatMap();         // ì¢Œì„ ì˜ˆì•½ ì—¬ë¶€ ë§µìœ¼ë¡œ ë³´ê¸°
-    virtual void showMovieMenu(); // ì˜í™” ì˜ˆë§¤ ë©”ë‰´
-    virtual void showMovieInfo() = 0; // ì˜í™” ì†Œê°œ ì •ë³´
+    void showSeatMap();         // ÁÂ¼® ¿¹¾à ¿©ºÎ ¸ÊÀ¸·Î º¸±â
+    virtual void showMovieMenu(); // ¿µÈ­ ¿¹¸Å ¸Ş´º
+    virtual void showMovieInfo() = 0; // ¿µÈ­ ¼Ò°³ Á¤º¸
     
-    void reserveTicket();       // ì¢Œì„ ì˜ˆì•½í•˜ê¸°
+    void reserveTicket();       // ÁÂ¼® ¿¹¾àÇÏ±â
     int getTicketPrice() { return nTicketPrice; }
-    void Payment();             // ê²°ì œí•˜ê¸°
+    void Payment();             // °áÁ¦ÇÏ±â
     
-    // ìƒˆë¡œ ì¶”ê°€ëœ ê¸°ëŠ¥ë“¤
-    void showMovieSchedule();   // ìƒì˜ì‹œê°„í‘œ ë³´ê¸°
-    void checkReservation();    // ì˜ˆì•½ë²ˆí˜¸ë¡œ ì¡°íšŒ
-    void checkReservationByName(); // ì´ë¦„ìœ¼ë¡œ ì¡°íšŒ
-    string getShowtimeString(int index); // ìƒì˜ì‹œê°„ ë¬¸ìì—´ ë°˜í™˜
+    // »õ·Î Ãß°¡µÈ ±â´Éµé
+    void showMovieSchedule();   // »ó¿µ½Ã°£Ç¥ º¸±â
+    void checkReservation();    // ¿¹¾à¹øÈ£·Î Á¶È¸
+    void checkReservationByName(); // ÀÌ¸§À¸·Î Á¶È¸
+    string getShowtimeString(int index); // »ó¿µ½Ã°£ ¹®ÀÚ¿­ ¹İÈ¯
     
     int getRowMax() { return nRowMax; }
     int getColMax() { return nColMax; }

@@ -1,19 +1,19 @@
 #include "Pay.h"
 
-// CardPay êµ¬í˜„
+// CardPay ±¸Çö
 int CardPay::charge(int amount) {
-    // ê²°ì œê¸ˆì•¡ = í‹°ì¼“ ê°€ê²© + í‹°ì¼“ ê°€ê²© * ì¹´ë“œìˆ˜ìˆ˜ë£Œ ë¹„ìœ¨
+    // °áÁ¦±İ¾× = Æ¼ÄÏ °¡°İ + Æ¼ÄÏ °¡°İ * Ä«µå¼ö¼ö·á ºñÀ²
     return amount + (int)(amount * interest);
 }
 
-// BankTransfer êµ¬í˜„
+// BankTransfer ±¸Çö
 int BankTransfer::charge(int amount) {
-    // ê²°ì œê¸ˆì•¡ = í‹°ì¼“ ê°€ê²© + í‹°ì¼“ ê°€ê²© * ì€í–‰ìˆ˜ìˆ˜ë£Œ ë¹„ìœ¨
+    // °áÁ¦±İ¾× = Æ¼ÄÏ °¡°İ + Æ¼ÄÏ °¡°İ * ÀºÇà¼ö¼ö·á ºñÀ²
     return amount + (int)(amount * interest);
 }
 
-// MobilePay êµ¬í˜„
+// MobilePay ±¸Çö
 int MobilePay::charge(int amount) {
-    // ê²°ì œê¸ˆì•¡ = í‹°ì¼“ ê°€ê²© + í‹°ì¼“ ê°€ê²© * ëª¨ë°”ì¼ìˆ˜ìˆ˜ë£Œ ë¹„ìœ¨
+    // °áÁ¦±İ¾× = Æ¼ÄÏ °¡°İ + Æ¼ÄÏ °¡°İ * ¸ğ¹ÙÀÏ¼ö¼ö·á ºñÀ²
     return amount + (int)(amount * interest);
 }

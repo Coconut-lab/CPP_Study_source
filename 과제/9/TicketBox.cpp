@@ -17,26 +17,26 @@ TUKoreaTBox::~TUKoreaTBox() {
     if (pMegaBoxScreen) delete pMegaBoxScreen;
 }
 
-// ìŠ¤í¬ë¦° ê°ì²´ ìƒì„±
+// ½ºÅ©¸° °´Ã¼ »ı¼º
 void TUKoreaTBox::Initialize() {
-    // Screen(ì˜í™”ì œëª©, í‹°ì¼“ê°€ê²©, ì¢Œì„(nRowMax), ì¢Œì„(nColMax))
-    pCGVScreen = new CGVScreen("ì†Œì£¼ì „ìŸ", 15000, 8, 8);
-    pLotteCinemaScreen = new LotteCinemaScreen("ë¦´ë¡œ & ìŠ¤í‹°ì¹˜", 12000, 10, 10);
-    pMegaBoxScreen = new MegaboxScreen("ë¯¸ì…˜ ì„íŒŒì„œë¸”:íŒŒì´ë„ ë ˆì½”ë‹", 20000, 8, 8);
+    // Screen(¿µÈ­Á¦¸ñ, Æ¼ÄÏ°¡°İ, ÁÂ¼®(nRowMax), ÁÂ¼®(nColMax))
+    pCGVScreen = new CGVScreen("¼ÒÁÖÀüÀï", 15000, 8, 8);
+    pLotteCinemaScreen = new LotteCinemaScreen("¸±·Î & ½ºÆ¼Ä¡", 12000, 10, 10);
+    pMegaBoxScreen = new MegaboxScreen("¹Ì¼Ç ÀÓÆÄ¼­ºí:ÆÄÀÌ³Î ·¹ÄÚ´×", 20000, 8, 8);
 }
 
 Screen* TUKoreaTBox::selectMenu() {
     int choice;
     
     cout << "-------------------------" << endl;
-    cout << "   ìƒì˜ê´€ ë©”ì¸ ë©”ë‰´   " << endl;
+    cout << "   »ó¿µ°ü ¸ŞÀÎ ¸Ş´º   " << endl;
     cout << "-------------------------" << endl;
-    cout << "1. CJ CGV\t\tì†”ë¡œ 1ê´€" << endl;
-    cout << "2. ë¡¯ë°ì‹œë„¤ë§ˆ\t\tì˜í™” 2ê´€" << endl;
-    cout << "3. ë©”ê°€ë°•ìŠ¤\t\tì˜í™” 3ê´€" << endl;
-    cout << "9. í†µê³„ ê´€ë¦¬" << endl;
+    cout << "1. CJ CGV\t\t¼Ö·Î 1°ü" << endl;
+    cout << "2. ·Ôµ¥½Ã³×¸¶\t\t¿µÈ­ 2°ü" << endl;
+    cout << "3. ¸Ş°¡¹Ú½º\t\t¿µÈ­ 3°ü" << endl;
+    cout << "9. Åë°è °ü¸®" << endl;
     cout << endl;
-    cout << "ì„ íƒ(1~3,9) ê·¸ì™¸ ì¢…ë£Œ : ";
+    cout << "¼±ÅÃ(1~3,9) ±×¿Ü Á¾·á : ";
     cin >> choice;
     cout << endl;
     
@@ -48,9 +48,9 @@ Screen* TUKoreaTBox::selectMenu() {
         case 3:
             return pMegaBoxScreen;
         case 9:
-            // í†µê³„ ê´€ë¦¬ ì‹¤í–‰
+            // Åë°è °ü¸® ½ÇÇà
             Manage();
-            return NULL; // í†µê³„ ê´€ë¦¬ í›„ ì¢…ë£Œ
+            return NULL; // Åë°è °ü¸® ÈÄ Á¾·á
         default:
             return NULL;
     }
@@ -60,21 +60,21 @@ void TUKoreaTBox::Manage() {
     string password;
     
     cout << "-------------------------" << endl;
-    cout << "ê´€ë¦¬ì ë©”ë‰´" << endl;
+    cout << "°ü¸®ÀÚ ¸Ş´º" << endl;
     cout << "-------------------------" << endl;
-    cout << "ê´€ë¦¬ì ë¹„ë°€ë²ˆí˜¸ ì…ë ¥ : ";
+    cout << "°ü¸®ÀÚ ºñ¹Ğ¹øÈ£ ÀÔ·Â : ";
     cin >> password;
     
     if (password != TICKETBOX_MANAGER_PWD) {
-        cout << "ë¹„ë°€ë²ˆí˜¸ê°€ í‹€ë ¸ìŠµë‹ˆë‹¤." << endl;
+        cout << "ºñ¹Ğ¹øÈ£°¡ Æ²·È½À´Ï´Ù." << endl;
         return;
     }
     
     cout << endl;
-    cout << "1. CJ CGV ìƒì˜ê´€ ê²°ì œê¸ˆì•¡ : " << Statistics::totalRevenue(pCGVScreen) << endl;
-    cout << "2. ë¡¯ë°ì‹œë„¤ë§ˆ ìƒì˜ê´€ ê²°ì œê¸ˆì•¡ : " << Statistics::totalRevenue(pLotteCinemaScreen) << endl;
-    cout << "3. ë©”ê°€ë°•ìŠ¤ ìƒì˜ê´€ ê²°ì œê¸ˆì•¡ : " << Statistics::totalRevenue(pMegaBoxScreen) << endl;
-    cout << "4. ì „ì²´ í‹°ì¼“ íŒë§¤ëŸ‰ : " << 
+    cout << "1. CJ CGV »ó¿µ°ü °áÁ¦±İ¾× : " << Statistics::totalRevenue(pCGVScreen) << endl;
+    cout << "2. ·Ôµ¥½Ã³×¸¶ »ó¿µ°ü °áÁ¦±İ¾× : " << Statistics::totalRevenue(pLotteCinemaScreen) << endl;
+    cout << "3. ¸Ş°¡¹Ú½º »ó¿µ°ü °áÁ¦±İ¾× : " << Statistics::totalRevenue(pMegaBoxScreen) << endl;
+    cout << "4. ÀüÃ¼ Æ¼ÄÏ ÆÇ¸Å·® : " << 
         (Statistics::totalSalesCount(pCGVScreen) + 
          Statistics::totalSalesCount(pLotteCinemaScreen) + 
          Statistics::totalSalesCount(pMegaBoxScreen)) << endl;

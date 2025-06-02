@@ -15,8 +15,8 @@ class Ticket {
     int nReservedID;
     int nPayAmount;
     int nPayMethod;
-    int nShowtime;        // ìƒì˜ì‹œê°„ ì¸ë±ìŠ¤ (0~4)
-    string customerName;  // ì˜ˆì•½ì ì´ë¦„
+    int nShowtime;        // »ó¿µ½Ã°£ ÀÎµ¦½º (0~4)
+    string customerName;  // ¿¹¾àÀÚ ÀÌ¸§
 
 public:
     Ticket() {
@@ -33,10 +33,10 @@ public:
     void setCheck(char check) { charCheck = check; }
     char getCheck() { return charCheck; }
     
-    // ì¢Œì„ ë²ˆí˜¸ ì €ì¥
+    // ÁÂ¼® ¹øÈ£ ÀúÀå
     void setSeat(int row, int col) { nRow = row; nCol = col; }
     
-    // ì¢Œì„ ì˜ˆì•½ ë²ˆí˜¸ ì €ì¥
+    // ÁÂ¼® ¿¹¾à ¹øÈ£ ÀúÀå
     void setReservedID(int reserved) { nReservedID = reserved; }
     int getReservedID() { return nReservedID; }
     
@@ -44,7 +44,7 @@ public:
     int getPayAmount() { return nPayAmount; }
     void setPayMethod(int method) { nPayMethod = method; }
     
-    // ìƒˆë¡œ ì¶”ê°€ëœ ê¸°ëŠ¥ë“¤
+    // »õ·Î Ãß°¡µÈ ±â´Éµé
     void setShowtime(int showtime) { nShowtime = showtime; }
     int getShowtime() { return nShowtime; }
     void setCustomerName(string name) { customerName = name; }

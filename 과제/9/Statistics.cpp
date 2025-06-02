@@ -2,7 +2,7 @@
 #include "Screen.h"
 #include "Ticket.h"
 
-// ìŠ¤í¬ë¦°ë³„ ì´ ìˆ˜ìµ ê³„ì‚°
+// ½ºÅ©¸°º° ÃÑ ¼öÀÍ °è»ê
 int Statistics::totalRevenue(Screen* pScreen) {
     if (!pScreen) return 0;
     
@@ -22,7 +22,7 @@ int Statistics::totalRevenue(Screen* pScreen) {
     return totalRevenue;
 }
 
-// ìŠ¤í¬ë¦°ë³„ ì´ íŒë§¤ëŸ‰ ê³„ì‚°
+// ½ºÅ©¸°º° ÃÑ ÆÇ¸Å·® °è»ê
 int Statistics::totalSalesCount(Screen* pScreen) {
     if (!pScreen) return 0;
     

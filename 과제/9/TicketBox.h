@@ -7,7 +7,7 @@
 
 class TicketBox {
 public:
-    virtual Screen * selectMenu() { return NULL; }  // ìƒì˜ê´€ ì„ íƒ ë©”ë‰´
+    virtual Screen * selectMenu() { return NULL; }  // »ó¿µ°ü ¼±ÅÃ ¸Ş´º
     void Initialize() {}
     void Manage();
 };

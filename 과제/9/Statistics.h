@@ -4,7 +4,7 @@
 #include "Screen.h"
 
 class Statistics {
-public:  // Static í•¨ìˆ˜ êµ¬í˜„
+public:  // Static ÇÔ¼ö ±¸Çö
     static int totalRevenue(Screen* pScreen);
     static int totalSalesCount(Screen* pScreen);
 };

@@ -2,19 +2,19 @@ cmake_minimum_required(VERSION 3.30)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# UTF-8 인코딩 설정 (한글 문제 해결)
-if(WIN32)
-    # Windows에서 MSVC 컴파일러 사용시
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /utf-8")
-    add_definitions(/utf-8)
-elseif(APPLE)
-    # macOS에서 Clang 컴파일러 사용시
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -finput-charset=UTF-8 -fexec-charset=UTF-8")
-    add_definitions(-DUTF8)
-else()
-    # Linux에서 GCC 컴파일러 사용시
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -finput-charset=UTF-8 -fexec-charset=UTF-8")
-endif()
+## UTF-8 인코딩 설정 (한글 문제 해결)
+#if(WIN32)
+#    # Windows에서 MSVC 컴파일러 사용시
+#    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /utf-8")
+#    add_definitions(/utf-8)
+#elseif(APPLE)
+#    # macOS에서 Clang 컴파일러 사용시
+#    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -finput-charset=UTF-8 -fexec-charset=UTF-8")
+#    add_definitions(-DUTF8)
+#else()
+#    # Linux에서 GCC 컴파일러 사용시
+#    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -finput-charset=UTF-8 -fexec-charset=UTF-8")
+#endif()
 
 project(CPP_Study_source)
 
@@ -39,7 +39,6 @@ add_library(CPP_Study_source STATIC library.cpp
         중간/3/example-3-10.cpp
         중간/3/Adder.h
         중간/3/Calculator.h
-        "중간/3/example-3-11.cpp"
         중간/3/Calculator.cpp
         중간/3/Adder.cpp
         중간/4/example-4-1.cpp

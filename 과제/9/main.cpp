@@ -10,7 +10,7 @@ int main() {
     bool bScreenMenu = true;
     int select = 0;
     
-    tBox.Initialize(); // 3ê°œì˜ ìŠ¤í¬ë¦° ê°ì²´ ìƒì„±
+    tBox.Initialize(); // 3°³ÀÇ ½ºÅ©¸° °´Ã¼ »ý¼º
     
     while (1) {
         if (bScreenMenu) {
@@ -20,34 +20,34 @@ int main() {
         }
         
         screen->showMovieMenu();
-        cout << "ë©”ë‰´ë¥¼ ì„ íƒí•˜ì„¸ìš”: ";
+        cout << "¸Þ´º¸¦ ¼±ÅÃÇÏ¼¼¿ä: ";
         cin >> select; cout << endl;
         
         switch (select) {
-            case 1: // ì˜í™” ì •ë³´
+            case 1: // ¿µÈ­ Á¤º¸
                 screen->showMovieInfo();
                 break;
-            case 2: // ì¢Œì„ í˜„í™©
+            case 2: // ÁÂ¼® ÇöÈ²
                 screen->showSeatMap();
                 break;
-            case 3: // ì¢Œì„ ì˜ˆì•½
+            case 3: // ÁÂ¼® ¿¹¾à
                 screen->reserveTicket();
                 break;
-            case 4: // í‹°ì¼“ ê²°ì œ
+            case 4: // Æ¼ÄÏ °áÁ¦
                 screen->Payment();
                 break;
-            case 5: // ìƒì˜ì‹œê°„í‘œ ë³´ê¸° (ìƒˆë¡œ ì¶”ê°€)
+            case 5: // »ó¿µ½Ã°£Ç¥ º¸±â (»õ·Î Ãß°¡)
                 screen->showMovieSchedule();
                 break;
-            case 6: // ì˜ˆì•½ ì¡°íšŒ (ìƒˆë¡œ ì¶”ê°€)
+            case 6: // ¿¹¾à Á¶È¸ (»õ·Î Ãß°¡)
                 {
                     int queryChoice;
                     cout << "-------------------------" << endl;
-                    cout << "ì˜ˆì•½ ì¡°íšŒ ë°©ë²• ì„ íƒ" << endl;
+                    cout << "¿¹¾à Á¶È¸ ¹æ¹ý ¼±ÅÃ" << endl;
                     cout << "-------------------------" << endl;
-                    cout << "1. ì˜ˆì•½ë²ˆí˜¸ë¡œ ì¡°íšŒ" << endl;
-                    cout << "2. ì´ë¦„ìœ¼ë¡œ ì¡°íšŒ" << endl;
-                    cout << "ì„ íƒ (1-2): ";
+                    cout << "1. ¿¹¾à¹øÈ£·Î Á¶È¸" << endl;
+                    cout << "2. ÀÌ¸§À¸·Î Á¶È¸" << endl;
+                    cout << "¼±ÅÃ (1-2): ";
                     cin >> queryChoice;
                     
                     if (queryChoice == 1) {
@@ -55,15 +55,15 @@ int main() {
                     } else if (queryChoice == 2) {
                         screen->checkReservationByName();
                     } else {
-                        cout << "ìž˜ëª»ëœ ì„ íƒìž…ë‹ˆë‹¤." << endl;
+                        cout << "Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù." << endl;
                     }
                 }
                 break;
-            case 7: // ìŠ¤í¬ë¦° ë©”ì¸ ë©”ë‰´
+            case 7: // ½ºÅ©¸° ¸ÞÀÎ ¸Þ´º
                 bScreenMenu = true;
                 break;
             default:
-                cout << "ìž˜ëª»ëœ ë©”ë‰´ ì„ íƒìž…ë‹ˆë‹¤." << endl;
+                cout << "Àß¸øµÈ ¸Þ´º ¼±ÅÃÀÔ´Ï´Ù." << endl;
                 break;
         }
     }
