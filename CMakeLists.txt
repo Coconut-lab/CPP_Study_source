@@ -115,7 +115,10 @@ add_library(CPP_Study_source STATIC library.cpp
         수시/upcasting_downcasting.cpp
         수시/overriding.cpp
         수시/abstract_class.cpp
-        과제/9/main.cpp)
+        과제/9/main.cpp
+        기말/13/example-13-7.cpp
+        기말/13/MyStack.h
+        기말/13/MyStack.cpp)
 
 add_executable(example-2-1 중간/2/example-2-1.cpp)
 add_executable(example-2-2 중간/2/example-2-2.cpp)
